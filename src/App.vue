@@ -1,28 +1,50 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <HomepageHeader/>
+    <section>
+      <div class="empty"></div>
+      <lorem add="5p"></lorem>
+    </section>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomepageHeader from './components/homepage-header.vue'
+import lorem from 'vue-lorem-ipsum';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomepageHeader,
+    lorem
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans';
+}
+
+h2, h3 {
+  font-family: 'Space Mono';
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+#app>section:last-child {
+  flex-grow: 1;
+}
+#app>section>.empty {
+  width: 563px;
+  height: 100px;
+  max-width: 80vw;
+  max-height: 25vh;
 }
 </style>
