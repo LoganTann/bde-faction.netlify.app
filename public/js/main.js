@@ -13,7 +13,8 @@ function mainPageScript() {
     const onScroll = function(e) {
       // inutile d'exécuter plus de fois que le nombre de FPS actuel
       window.requestAnimationFrame(function(){
-        // BUG: F5 pas ontop -> bug
+        // BUG : F5 pas ontop -> bug
+        // BUG : resize après scroll
         // console.log(GLOBAL.positionNextStep);
         if (page_content.getBoundingClientRect().top < GLOBAL.positionNextStep) {
           logo_png.classList.add("animStep2");
