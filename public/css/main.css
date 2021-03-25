@@ -15,7 +15,9 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-#main_page>header {
+
+
+#logo_accueil {
   height: 90vh;
   background-image: url("../assets/trees.jpg");
   background-size: cover;
@@ -26,7 +28,7 @@ h3 {
   display: flex;
   justify-content: center; */
 }
-#main_page #logo_png {
+#logo_accueil>img {
   /*transition: all 0.5s ease 0s;*/
 
   position: fixed;
@@ -36,11 +38,13 @@ h3 {
 
   transform: translateX(-50%); /*centre horizontal comme la position fixed est cheloue*/
 }
-#main_page #logo_png.animStep2 {
+#logo_accueil>img.animStep2 {
   position: relative;
   top: 100%;
   transform: translateY(-58%); /*barre se trouve à 58% du logo*/
 }
+
+
 #main_page>#page_content {
   flex-grow: 1;
 }
