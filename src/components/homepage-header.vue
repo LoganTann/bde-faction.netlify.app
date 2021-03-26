@@ -13,7 +13,7 @@ export default {
     };
   },
   mounted() {
-    // TODO: Portage vers vue avec des :bind etc.
+    // TODO: Portage vers vue avec des :bind, methods etc.
     // DECLARATIONS --------------------------------------------------------- //
 
     /* positionNextStep est partagé entre les deux events : il est initialisé
@@ -28,10 +28,10 @@ export default {
 
     // requestAnimationFrame : __évite__ de call + de fois que les FPS actuel
     const onScroll = function() {
-      window.requestAnimationFrame(function(){
+      window.requestAnimationFrame(function(){// vue next tick ?
         const container_rect = logo_container.getBoundingClientRect();
         if ((container_rect.top + container_rect.height) < SHARED.positionNextStep) {
-          logo_png.classList.add("animStep2");
+          logo_png.classList.add("animStep2"); // :bind class ?
         } else if (logo_png.classList.contains("animStep2")){
           logo_png.classList.remove("animStep2");
         }

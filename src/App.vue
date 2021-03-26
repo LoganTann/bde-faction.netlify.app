@@ -4,7 +4,8 @@
     <HomepageHeader/>
     <section class="container">
       <HomepageLogoMargin/>
-      <lorem add="5p"></lorem>
+      <lorem add="2p"></lorem>
+      <Team/>
     </section>
 
   </div>
@@ -13,6 +14,7 @@
 <script>
 import HomepageHeader from './components/homepage-header.vue'
 import HomepageLogoMargin from './components/homepage-logo-margin.vue'
+import Team from './components/team.vue'
 import lorem from 'vue-lorem-ipsum';
 
 
@@ -21,7 +23,8 @@ export default {
   components: {
     HomepageHeader,
     HomepageLogoMargin,
-    lorem
+    lorem,
+    Team
   }
 }
 </script>
