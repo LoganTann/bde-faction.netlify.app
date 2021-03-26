@@ -5,9 +5,8 @@
     <section class="container">
       <HomepageLogoMargin/>
       <lorem add="2p"></lorem>
-      <Team/>
     </section>
-
+    <Team/>
   </div>
 </template>
 
