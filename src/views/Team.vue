@@ -70,11 +70,13 @@
     mounted() {
       M.AutoInit();
       const member_pics = document.querySelectorAll('#team .avatar img');
-      this.materialBoxInstance = M.Materialbox.init(member_pics, {});
+      this.materialBoxInstances = M.Materialbox.init(member_pics, {});
     },
     destroyed() {
-      this.materialBoxInstance.destroy();
-      this.materialBoxInstance = null;
+      for (const picture_event of this.materialBoxInstances) {
+        picture_event.destroy();
+      }
+      this.materialBoxInstances = null;
     },
     data() {
       return {

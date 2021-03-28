@@ -1,6 +1,6 @@
 <template>
   <header id="homepage-header" class="center">
-    <img :class="{'animStep2': animStep2}" src="../../assets/logo.png" alt="Logo BDE Faction - IUT de Paris 2021-2022">
+    <img :class="{'animStep2': animStep2}" src="@/assets/logo.png" alt="Logo BDE Faction - IUT de Paris 2021-2022">
   </header>
 </template>
 
@@ -13,7 +13,8 @@ export default {
       positionNextStep: 300,
       logo_container: null,
       logo_png: null,
-      animStep2: false
+      animStep2: false,
+      log: ""
     };
   },
   methods: {
@@ -40,7 +41,7 @@ export default {
         const loto_flagPos = this.logo_png.getBoundingClientRect().height * 0.58;
         const logo_top = this.logo_container.getBoundingClientRect().height * 0.2;
         this.positionNextStep = Math.floor(logo_top + loto_flagPos);
-
+        this.log = Date.now();
         this.onScroll();
       }.bind(this), 75);
     }
@@ -51,7 +52,7 @@ export default {
     // https://stackoverflow.com/a/33386309
       this.onImageLoad = this.onImageLoad.bind(this);
       this.onScroll = this.onScroll.bind(this);
-      this.onResize = this.onScroll.bind(this);
+      this.onResize = this.onResize.bind(this);
     this.logo_png.addEventListener("load", this.onImageLoad);
   },
   destroyed() {
@@ -78,7 +79,6 @@ export default {
   top: 20%;
   max-width: 80vw;
   max-height: 50vh;
-
   /*centre horizontal comme la position fixed est cheloue*/
     transform: translateX(-50%);
 }
