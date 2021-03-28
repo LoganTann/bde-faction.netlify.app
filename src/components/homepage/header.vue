@@ -13,8 +13,7 @@ export default {
       positionNextStep: 300,
       logo_container: null,
       logo_png: null,
-      animStep2: false,
-      log: ""
+      animStep2: false
     };
   },
   methods: {
@@ -41,7 +40,6 @@ export default {
         const loto_flagPos = this.logo_png.getBoundingClientRect().height * 0.58;
         const logo_top = this.logo_container.getBoundingClientRect().height * 0.2;
         this.positionNextStep = Math.floor(logo_top + loto_flagPos);
-        this.log = Date.now();
         this.onScroll();
       }.bind(this), 75);
     }
