@@ -1,27 +1,24 @@
 <template>
   <div id="app">
-
-    <HomepageHeader/>
-    <section class="container">
-      <HomepageLogoMargin/>
+    <Homepage />
+    <Team/>
+    <section>
       <lorem add="2p"></lorem>
     </section>
-    <Team/>
   </div>
 </template>
 
 <script>
-import HomepageHeader from './components/homepage-header.vue'
-import HomepageLogoMargin from './components/homepage-logo-margin.vue'
-import Team from './components/team.vue'
+
+import Homepage from './components/homepage/main.vue';
+import Team from './components/pages/team.vue';
 import lorem from 'vue-lorem-ipsum';
 
 
 export default {
   name: 'App',
   components: {
-    HomepageHeader,
-    HomepageLogoMargin,
+    Homepage,
     lorem,
     Team
   }
