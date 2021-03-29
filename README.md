@@ -1,5 +1,7 @@
 # Coucou !
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/538fe26b-646b-4990-9f2e-db0882bf40f2/deploy-status)](https://app.netlify.com/sites/bde-faction/deploys)
+
 Si tu es ici, c'est que t'es bigrement curieux.
 
 * Soit t'es un étudiant lambda qui est juste curieux et qui se dit "mais quelle structure étrange du site... Où sont les fichiers HTML ?"  
