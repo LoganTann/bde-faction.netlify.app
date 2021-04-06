@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import Header from '@/components/homepage/header.vue'
-import LogoMargin from '@/components/homepage/logo-margin.vue'
+const Header = ()=>import('@/components/homepage/header.vue');
+const LogoMargin = ()=>import('@/components/homepage/logo-margin.vue');
 
 export default {
   name: 'Homepage',
@@ -37,5 +37,5 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 </style>

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Homepage from '@/views/Homepage.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +7,7 @@ const routes = [
   {
     path: '/',
     name: 'Liste BDE Informatique FACTION',
-    component: Homepage,
+    component: () => import('@/views/Homepage.vue'),
     meta: {layout: 'hideSidebar'}
   },
   {

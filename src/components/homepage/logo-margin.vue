@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .homepage-logo-margin {
   max-width: 80vw;
   max-height: 50vh;

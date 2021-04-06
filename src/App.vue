@@ -10,7 +10,8 @@
 
 
 <script>
-import Navbar from '@/components/Navbar.vue'
+
+const Navbar = ()=>import('@/components/Navbar.vue');
 export default {
   name: 'App',
   components: {

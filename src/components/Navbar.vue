@@ -1,7 +1,7 @@
 <template>
   <transition name="navAnim">
     <div id="nav" v-if="! isHidden">
-      <router-link to="/"><img src="@/assets/logo.png" alt="Logo BDE FACTION"></router-link>
+      <router-link to="/"><img src="@/assets/logo.webp" alt="Logo BDE FACTION"></router-link>
       <router-link to="/">Accueil</router-link>
       <router-link to="/team">La team</router-link>
     </div>
@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 #nav.navAnim-enter {
   transform: translateY(-100%);
 }
@@ -42,7 +42,7 @@ export default {
 #nav> a {
   margin-left: 1em;
 }
-img {
+#nav img {
   max-height: 4em;
   width: auto;
 }

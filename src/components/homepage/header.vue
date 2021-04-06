@@ -61,7 +61,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 /* TODO: SCSS */
 #homepage-header {
   height: 90vh;
