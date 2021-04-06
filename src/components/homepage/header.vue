@@ -1,6 +1,6 @@
 <template>
   <header id="homepage-header" class="center">
-    <img :class="{'animStep2': animStep2}" src="@/assets/logo.png" alt="Logo BDE Faction - IUT de Paris 2021-2022">
+    <img :class="{'animStep2': animStep2}" src="@/assets/logo.webp" alt="Logo BDE Faction - IUT de Paris 2021-2022">
   </header>
 </template>
 
@@ -65,7 +65,7 @@ export default {
 /* TODO: SCSS */
 #homepage-header {
   height: 90vh;
-  background-image: url("../../assets/trees.jpg");
+  background-image: url("../../assets/trees.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
