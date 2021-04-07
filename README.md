@@ -38,7 +38,7 @@ yarn serve # ou "npm run serve" si vous avez pas téléchargé yarn
 Le serveur de développement possède une fonction de hot reload, qui rechargera notre page en temps réel lorsque le code est modifié. Quelle modernité 🤩 !  
 Même si notre site est rapide, nous pouvons le rendre encore plus rapide. `yarn build` (ou `npm run build`) compilera le code en mode *production*, par contre, c'est à vous de déployer le dossier `dist` sur un véritable serveur.
 
-Enfin, vous pouvez exécuter une vérification syntaxique (**lint**) + correction d'erreurs en faisant `yarn lint` (ou `npm run build`)
+Enfin, vous pouvez exécuter une vérification syntaxique (**lint**) + correction d'erreurs en faisant `yarn lint` (ou `npm run lint`)
 
 ### Open Source ?
 
