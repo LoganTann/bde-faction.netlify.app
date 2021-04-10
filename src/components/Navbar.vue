@@ -3,6 +3,7 @@
     <div id="nav" v-if="! isHidden">
       <router-link to="/"><img src="@/assets/logo.webp" alt="Logo BDE FACTION"></router-link>
       <router-link to="/">Accueil</router-link>
+      <router-link to="/blog/">Le blog</router-link>
       <router-link to="/team">La team</router-link>
     </div>
   </transition>

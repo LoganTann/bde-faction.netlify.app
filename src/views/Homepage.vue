@@ -21,6 +21,10 @@
 
       <p><b>Site en cours de construction</b> : Nous ajouterons progressivement le contenu de notre site (section blog, ressouces etc.)</p>
     </section>
+
+    <section>
+      <router-link to="/blog/">Notre blog</router-link>
+    </section>
   </div>
 </template>
 

@@ -13,7 +13,12 @@ const routes = [
   {
     path: '/team',
     name: 'Notre équipe',
-    component: () => import('@/views/Team.vue')
+    component: () => import(/* webpackChunkName: "about" */ '@/views/Team.vue')
+  },
+  {
+    path: '/blog/:category?/:article_name?',
+    name: 'Le blog',
+    component: () => import(/* webpackChunkName: "blog" */ '@/views/Blog.vue')
   }
 ]
 
