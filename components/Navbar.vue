@@ -1,9 +1,10 @@
 <template>
   <transition name="navAnim">
     <div id="nav" v-if="! isHidden">
-      <router-link to="/"><img src="@/assets/logo.webp" alt="Logo BDE FACTION"></router-link>
-      <router-link to="/">Accueil</router-link>
-      <router-link to="/team">La team</router-link>
+      <Nuxt-link to="/"><img src="@/assets/logo.webp" alt="Logo BDE FACTION"></Nuxt-link>
+      <Nuxt-link to="/">Accueil</Nuxt-link>
+      <Nuxt-link to="/team">La team</Nuxt-link>
+      <Nuxt-link to="/blog">Le blog</Nuxt-link>
     </div>
   </transition>
 </template>

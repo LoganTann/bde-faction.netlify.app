@@ -1,18 +1,21 @@
 <template lang="html">
-  <section id="team" class="container">
-    <div v-for="category in member_list" :key="category.name" class="row">
-      <div class="col s12 m4">
-        <h3>{{category.name}}</h3>
-      </div>
-      <div class="col s12 l8 row center">
-        <div v-for="member in category.members" :key="member.picture" class="col s12" :class="get_equal_column_value(category.members.length,'m')">
-          <span class="avatar"> <img :src="pic_url(member.picture)"/> </span>
-          <h5>{{member.firstName}} <span class="surname">{{member.surName}}</span></h5>
-          <p>{{member.caption}}</p>
+  <div>
+    <Navbar />
+    <section id="team" class="container">
+      <div v-for="category in member_list" :key="category.name" class="row">
+        <div class="col s12 m4">
+          <h3>{{category.name}}</h3>
+        </div>
+        <div class="col s12 l8 row center">
+          <div v-for="member in category.members" :key="member.picture" class="col s12" :class="get_equal_column_value(category.members.length,'m')">
+            <span class="avatar"> <img :src="pic_url(member.picture)" /> </span>
+            <h5>{{member.firstName}} <span class="surname">{{member.surName}}</span></h5>
+            <p>{{member.caption}}</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <style lang="css">
@@ -43,8 +46,6 @@
 </style>
 
 <script>
-  import M from '@materializecss/materialize';
-
   export default {
     name: 'Team',
     computed: {
@@ -68,6 +69,7 @@
       }
     },
     mounted() {
+      const M = this.$M;
       M.AutoInit();
       const member_pics = document.querySelectorAll('#team .avatar img');
       this.materialBoxInstances = M.Materialbox.init(member_pics, {});
