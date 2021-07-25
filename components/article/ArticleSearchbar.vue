@@ -1,9 +1,11 @@
 <template>
   <div>
-    <input v-model="query" type="search" autocomplete="off" />
+    <input v-model="query" type="search" autocomplete="off">
     <ul v-if="articles.length">
       <li v-for="article of articles" :key="article.slug">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">{{ article.title }}</NuxtLink>
+        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+          {{ article.title }}
+        </NuxtLink>
       </li>
     </ul>
   </div>
@@ -12,11 +14,12 @@
 <script>
 // https://content.nuxtjs.org/fr/snippets
 export default {
+  name: 'ArticleSearchbar',
   data () {
     return {
       query: '',
       articles: []
-    }
+    };
   },
   watch: {
     async query (query) {
