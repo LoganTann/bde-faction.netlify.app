@@ -10,7 +10,9 @@
     <hr/>
     <nuxt-content :document="article"/>
     <hr/>
-    <article-prev-next/>
+    {{prev}} {{next}}
+
+    <article-prev-next :prev="prev" :next="next"/>
   </div>
 </template>
 
@@ -27,8 +29,17 @@ export default {
     if (!article) {
       return error({ statusCode: 404, message: 'Article not found. Path : ' + path })
     }
+
+    const [prev, next] = await $content({ deep: true })
+      .only(['title', 'path'])
+      .sortBy('path | createdAt', 'asc')
+      .surround(article.path)
+      .fetch()
+
     return {
-      article
+      article,
+      prev,
+      next
     }
   }
 }
