@@ -1,17 +1,16 @@
 <template>
   <div class="container">
 
-    <Navbar></Navbar>
+    <Navbar>
+      <ArticleSearchbar />
+    </Navbar>
 
-    <ArticleSearchbar />
     <h1>{{ article.title }}</h1>
     <blockquote>{{ article.description }}</blockquote>
     <ArticleTOC :articleTOC="article.toc"/>
     <hr/>
     <nuxt-content :document="article"/>
     <hr/>
-    {{prev}} {{next}}
-
     <article-prev-next :prev="prev" :next="next"/>
   </div>
 </template>

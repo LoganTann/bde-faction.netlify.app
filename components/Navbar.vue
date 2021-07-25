@@ -7,6 +7,7 @@
       <Nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{'b': isCurrent(link.url)}">
         {{link.name}}
       </Nuxt-link>
+      <slot></slot>
     </div>
   </transition>
 </template>

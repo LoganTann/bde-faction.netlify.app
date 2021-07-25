@@ -1,18 +1,46 @@
 <template>
-  <div>
-    <input class="browser-default" v-model="query" type="search" autocomplete="off">
+  <div class="search-wrapper">
+    <input class="autocomplete" v-model="query" type="search" autocomplete="off"
+           @focusin="focused = 'focused'"
+           @focusout="focused = ''"
+           placeholder="Rechercher des articles">
 
-    <ul v-if="articles.length">
+    <ul class="dropdown-content" :class="focused">
       <li v-for="article of articles" :key="article.path">
-
         <article-link :to="article.path">
           {{ article.title }}
         </article-link>
       </li>
+      <li v-if="articles.length == 0">
+        <a href="#!" v-if="query == ''">Cherchez des articles</a>
+        <a href="#!" v-else>Rien trouvé :-(</a>
+      </li>
     </ul>
   </div>
 </template>
+<style>
+.search-wrapper {
+  position: relative;
+  width: 20em;
+  margin-left: auto;
+}
+.dropdown-content {
+  transition: all 0.2s;
+  display: block;
+  top: initial;
+  width: 100%;
+  transform: rotateX(90deg) translateX(-1em);
+}
+.dropdown-content.focused {
+  opacity: 1;
+  transform: rotateX(0) translateX(0em);
+}
+.dropdown-content a[href="#!"] {
+  color: black;
+  cursor: default;
+}
 
+</style>
 <script>
 // https://content.nuxtjs.org/fr/snippets
 export default {
@@ -20,7 +48,8 @@ export default {
   data () {
     return {
       query: '',
-      articles: []
+      articles: [],
+      focused: false
     };
   },
   watch: {
@@ -33,7 +62,7 @@ export default {
       this.articles = await this.$content({deep: true})
         .only(['title', 'slug'])
         .sortBy('createdAt', 'asc')
-        .limit(12)
+        .limit(7)
         .search(query)
         .fetch()
 
