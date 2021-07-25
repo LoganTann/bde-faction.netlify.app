@@ -1,24 +1,17 @@
 <template>
   <div>
-    <NuxtLink v-if="prev" :to="correctPath(prev.path)">
+    <article-link v-if="prev" :to="prev.path">
       {{ prev.title }} <
-    </NuxtLink>
-
-    <NuxtLink v-if="next" :to="correctPath(next.path)">
+    </article-link>
+    <article-link v-if="next" :to="next.path">
       > {{ next.title }}
-    </NuxtLink>
+    </article-link>
   </div>
 </template>
 
 <script>
 // https://content.nuxtjs.org/fr/snippets
 export default {
-  props:['prev', 'next'],
-  methods: {
-    correctPath (path) {
-      // adds prefix and removes the suffix /index
-      return `/articles${path}`.replaceAll(/\/index$/g, "/");
-    }
-  }
+  props:['prev', 'next']
 }
 </script>

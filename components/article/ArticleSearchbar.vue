@@ -1,11 +1,13 @@
 <template>
   <div>
-    <input v-model="query" type="search" autocomplete="off">
+    <input class="browser-default" v-model="query" type="search" autocomplete="off">
+
     <ul v-if="articles.length">
-      <li v-for="article of articles" :key="article.slug">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+      <li v-for="article of articles" :key="article.path">
+
+        <article-link :to="article.path">
           {{ article.title }}
-        </NuxtLink>
+        </article-link>
       </li>
     </ul>
   </div>
@@ -28,12 +30,14 @@ export default {
         return
       }
 
-      this.articles = await this.$content('articles')
+      this.articles = await this.$content({deep: true})
         .only(['title', 'slug'])
         .sortBy('createdAt', 'asc')
         .limit(12)
         .search(query)
         .fetch()
+
+      return 'aaaaa';
     }
   }
 }
