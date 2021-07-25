@@ -37,15 +37,16 @@
 </style>
 
 <script lang="ts">
+import Vue from 'vue'
 
-export default {
-    transition(to, from) {
-      if (!from) {
-        return 'slide-left'
-      }
-      return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+export default Vue.extend({
+  transition (to, from) {
+    if (!from) {
+      return 'slide-left'
     }
-};
+    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+  }
+})
 </script>
 
 

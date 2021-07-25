@@ -1,20 +1,28 @@
 <template>
   <transition name="navAnim">
-    <div id="nav" v-if="! isHidden">
-      <Nuxt-link to="/"><img src="@/assets/logo.webp" alt="Logo BDE FACTION"></Nuxt-link>
-      <Nuxt-link to="/">Accueil</Nuxt-link>
-      <Nuxt-link to="/team">La team</Nuxt-link>
-      <Nuxt-link to="/blog">Le blog</Nuxt-link>
+    <div v-if="! isHidden" id="nav">
+      <Nuxt-link to="/">
+        <img src="@/assets/logo.webp" alt="Logo BDE FACTION">
+      </Nuxt-link>
+      <Nuxt-link to="/">
+        Accueil
+      </Nuxt-link>
+      <Nuxt-link to="/team">
+        La team
+      </Nuxt-link>
+      <Nuxt-link to="/blog">
+        Le blog
+      </Nuxt-link>
     </div>
   </transition>
 </template>
 
 <script>
 export default {
-  name: 'navbar',
+  name: 'Navbar',
   computed: {
-    isHidden() {
-      return (this.$route.meta.layout || "") == "hideSidebar";
+    isHidden () {
+      return (this.$route.meta.layout || '') === 'hideSidebar'
     }
   }
 }

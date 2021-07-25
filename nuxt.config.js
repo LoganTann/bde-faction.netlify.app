@@ -16,18 +16,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      //{ rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css' },
+      // { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Space+Mono:wght@700&family=Material+Icons&display=swap' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-  'materialize-css/dist/css/materialize.min.css'
-  ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
+    'materialize-css/dist/css/materialize.min.css'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -51,7 +47,6 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-
 
   plugins: [{ src: '~/plugins/materialize.js', mode: 'client' }]
 }
