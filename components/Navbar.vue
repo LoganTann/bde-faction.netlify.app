@@ -4,14 +4,8 @@
       <Nuxt-link to="/">
         <img src="@/assets/logo.webp" alt="Logo BDE FACTION">
       </Nuxt-link>
-      <Nuxt-link to="/">
-        Accueil
-      </Nuxt-link>
-      <Nuxt-link to="/team">
-        La team
-      </Nuxt-link>
-      <Nuxt-link to="/blog">
-        Le blog
+      <Nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{'b': isCurrent(link.url)}">
+        {{link.name}}
       </Nuxt-link>
     </div>
   </transition>
@@ -20,6 +14,21 @@
 <script>
 export default {
   name: 'Navbar',
+  data() {
+    return {
+      links: [
+        {name: 'Accueil', url: '/'},
+        {name: 'La team', url: '/team'},
+        {name: 'Le blog', url: '/articles/'},
+      ]
+    }
+  },
+  methods: {
+    isCurrent (url) {
+      // the root don't have the navbar
+      return this.$route.fullPath.startsWith(url) && url !== '/';
+    }
+  },
   computed: {
     isHidden () {
       return (this.$route.meta.layout || '') === 'hideSidebar'
@@ -54,5 +63,8 @@ export default {
 #nav img {
   max-height: 4em;
   width: auto;
+}
+.b {
+  font-weight: bold;
 }
 </style>
