@@ -23,6 +23,7 @@
   position: relative;
   width: 20em;
   margin-left: auto;
+  margin-right: 1em;
 }
 .dropdown-content {
   transition: all 0.2s;
@@ -65,8 +66,6 @@ export default {
         .limit(7)
         .search(query)
         .fetch()
-
-      return 'aaaaa';
     }
   }
 }

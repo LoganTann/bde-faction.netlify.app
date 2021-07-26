@@ -24,6 +24,12 @@
         </ul>
       </div>
     </section>
+
+    <section>
+      <h2>Notre blog</h2>
+      <p><nuxt-link :to="articles/blog"></nuxt-link>
+      </p>
+    </section>
   </div>
 </template>
 
