@@ -11,8 +11,7 @@
             <article-link :to="post.path">{{post.title}}</article-link>
           </li>
         </ul>
-
-        {{allArticles}}
+        {{generateBetterStructure(allArticles)}}
       </div>
 
       <div class="col m7 push-m1">
@@ -29,36 +28,42 @@
 </template>
 
 <script>
-
-/*
-/
-/dir/
-/dir/other/another
-/dir/other/
-
- */
 export default {
-  /* methods: {
-    articlesInCategory(currentArticle, allArticles) {
-      const dir = currentArticle.dir;
-      const result = [];
-      for (article of allArticles) {
-        if (article.dir == dir) {
-          result.push({})
+  methods: {
+    generateBetterStructure(allArticles) {
+      const result = {};
+      // Will convert the path list into a tree
+      for (const article of allArticles) {
+        if (typeof result[article.dir] !== "object") {
+          result[article.dir] = { content: [], sortBy: "createdAt" };
+        }
+        const refDir = result[article.dir];
+
+        switch (article.slug) {
+          case '0':
+            refDir.sortBy = "slug";
+            // fall through
+          case 'index': {
+            const parentDir = '/' + article.dir.split('/').slice(1, -1).join('/');
+            if (article.dir !== '/' && result[parentDir]) {
+              result[parentDir].content.push({ type: "category", content: article });
+            }
+            break;
+          }
+          default:
+            refDir.content.push({ type: "article", content: article });
+            break;
         }
       }
-
-
       return result;
     }
-  } */
-
+  },
   async asyncData ({ $content, params, error }) {
     const path = `/${params.pathMatch || ''}`
-    const allowedPaths = { $in: [path, `${path}/index`, `${path}index`] };
+    const allowedPaths = { $in: [path, `${path}/index`, `${path}index`, `${path}/0`, `${path}0`] };
 
     const allArticles = await $content({ deep: true })
-      .only(['title', 'description','slug', 'path', 'dir', 'path', 'createdAt', 'updatedAt'])
+      .only(['title', 'description', 'slug', 'path', 'dir', 'path', 'createdAt', 'updatedAt'])
       .fetch();
 
     const [article] = await $content({ deep: true })
@@ -71,7 +76,8 @@ export default {
 
     const [prev, next] = await $content({ deep: true })
       .only(['title', 'path'])
-      .sortBy('path | createdAt', 'asc')
+      .where({ dir: article.dir })
+      .sortBy('path', 'asc')
       .surround(article.path)
       .fetch()
 
