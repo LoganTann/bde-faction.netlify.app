@@ -12,6 +12,12 @@
       </p>
     </section>
 
+    <section class="container">
+      <h2>Notre blog</h2>
+      <p><Nuxt-link to='/articles/'>Lien blog</Nuxt-link>
+      </p>
+    </section>
+
     <section id="contact" class="container flow-text">
       <h2>Contactez-nous !</h2>
       <p class="">Envie de travailler ensemble ? Que vous soyez un étudiant, une association ou une entreprise, nous sommes ouvert à toute proposition (partenariat, création de projets ou proposition d'évènements)</p>
@@ -23,12 +29,6 @@
           <li class="collection-item avatar"><i class="circle material-icons">chat</i> Voisin de classe ? Réponse garantie sur notre discord !</li>
         </ul>
       </div>
-    </section>
-
-    <section>
-      <h2>Notre blog</h2>
-      <p><nuxt-link :to="articles/blog"></nuxt-link>
-      </p>
     </section>
   </div>
 </template>

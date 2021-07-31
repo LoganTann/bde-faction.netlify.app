@@ -65,7 +65,7 @@ export default {
 /* TODO: SCSS */
 #homepage-header {
   height: 90vh;
-  background-image: url("../../assets/trees.webp");
+  background-image: url("../../assets/classroom.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;

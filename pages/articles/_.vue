@@ -5,17 +5,7 @@
     </Navbar>
     <div class="row">
       <div class="col m3 push-m1">
-        <h4>Liste des articles</h4>
-        <ul class="browser-default">
-          <li v-for="post of allArticles" :key="post.path">
-            <article-link :to="post.path">
-              {{ post.title }}
-            </article-link>
-          </li>
-        </ul>
-        {{ allArticles }}
-        <hr>
-        {{ generateBetterStructure(allArticles) }}
+        <article-nav :all-articles="allArticles" :current-dir="article.dir"></article-nav>
       </div>
 
       <div class="col m7 push-m1">
@@ -80,49 +70,6 @@ export default Vue.extend({
       article,
       prev,
       next
-    }
-  },
-  methods: {
-    /**
-     * Given a list of articles, will return an object where key is the category and object->content contains the list
-     * of articles, correctly sorted (by date or by slug).
-     * @param allArticles
-     */
-    generateBetterStructure (allArticles: articleMetadata[]) {
-      const result: articleTree = {};
-      // Will convert the path list into a tree
-      for (const article of allArticles) {
-        if (typeof result[article.dir] !== "object") {
-          result[article.dir] = { content: [], sortBy: "slug" };
-        }
-        const refDir = result[article.dir];
-
-        switch (article.slug) {
-          case 'index':
-            if (article.dir !== '/') {
-              refDir.sortBy = "updatedAt";
-            }
-            // fall through
-          case '0': {
-            const parentDir = '/' + article.dir.split('/').slice(1, -1).join('/');
-            if (article.dir !== '/' && result[parentDir]) {
-              result[parentDir].content.push({ type: "category", content: article });
-            }
-            break;
-          }
-          default:
-            refDir.content.push({ type: "article", content: article });
-            break;
-        }
-      }
-      // will sort
-      for (const path in result) {
-        const category = result[path];
-        if (category.sortBy === 'updatedAt') {
-          category.content.sort((a, b) => b.content.updatedAt.localeCompare(a.content.updatedAt));
-        }
-      }
-      return result;
     }
   }
 });

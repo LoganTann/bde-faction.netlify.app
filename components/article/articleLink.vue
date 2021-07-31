@@ -10,7 +10,9 @@ export default {
   methods: {
     /// adds prefix and removes the suffix /index
     correctPath (path) {
-      return `/articles${path}`.replaceAll(/\/index$/g, "/");
+      if (typeof (path) === 'string')
+        return `/articles${path}`.replace(/\/index$/g, "/");
+      else return '/articles/'
     }
   }
 };
