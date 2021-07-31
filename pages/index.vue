@@ -14,7 +14,7 @@
 
     <section class="container">
       <h2>Notre blog</h2>
-      <p><Nuxt-link to='/articles/'>Lien blog</Nuxt-link>
+      <p><Nuxt-link to='/articles/blog'>Lien blog</Nuxt-link>
       </p>
     </section>
 

@@ -60,7 +60,7 @@ export default Vue.extend({
     const [prev, next] = (await $content({ deep: true })
       .only(['title', 'path'])
       .where({ dir: article.dir })
-      .sortBy('path', 'asc')
+      .sortBy('createdAt', 'desc')
       .surround(article.path)
       .fetch()
       ) as Array<IContentDocument>

@@ -1,6 +1,6 @@
 <template>
   <header id="homepage-header" class="center">
-    <img :class="{'animStep2': animStep2}" src="@/assets/logo.webp" alt="Logo BDE Faction - IUT de Paris 2021-2022">
+    <img :class="{'animStep2': animStep2}" src="@/assets/logo.webp" alt="Logo BDE Faction - IUT de Paris 2021-2022" @load="onImageLoad">
   </header>
 </template>
 
@@ -48,10 +48,10 @@ export default {
     this.logo_container = document.getElementById("homepage-header");
     this.logo_png = document.querySelector("#homepage-header>img");
     // https://stackoverflow.com/a/33386309
-      this.onImageLoad = this.onImageLoad.bind(this);
-      this.onScroll = this.onScroll.bind(this);
-      this.onResize = this.onResize.bind(this);
-    this.logo_png.addEventListener("load", this.onImageLoad);
+    this.onImageLoad = this.onImageLoad.bind(this);
+    this.onScroll = this.onScroll.bind(this);
+    this.onResize = this.onResize.bind(this);
+    //this.logo_png.addEventListener("load", this.onImageLoad);
   },
   destroyed() {
     window.removeEventListener("resize", this.onResize);
