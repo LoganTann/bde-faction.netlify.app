@@ -4,7 +4,7 @@
     <section class="container flow-text">
       <HomepageLogoMargin />
 
-      <h2>Fiers d'être acteurs de la vie étudiante</h2>
+      <h1 style="display: none /* seo >>*/">Fiers d'être acteurs de la vie étudiante</h1>
       <blockquote class="i">Qui ne connaît pas la signification de BDE n'a probablement pas connu une véritable vie de campus...</blockquote>
       <p>
         Le Bureau des Etudiants, c'est un groupe d'élèves ambitieux ayant une volonté très simple : organiser la vie étudiante et la réussite de tous au sein de notre département.<br />
@@ -16,6 +16,7 @@
       <h2>Notre blog</h2>
       <p><Nuxt-link to='/articles/blog'>Lien blog</Nuxt-link>
       </p>
+      <article-last></article-last>
     </section>
 
     <section id="contact" class="container flow-text">

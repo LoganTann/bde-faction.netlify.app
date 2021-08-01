@@ -1,6 +1,6 @@
 ---
 title: Section blog
-description: Page d'accueil de la section blog.
+description: Nouvelle fonctionnalité de blog ajoutée ! Parcourez dès à présent les derniers posts
 ---
 
 Bienvenue sur le blog du BDE.

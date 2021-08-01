@@ -1,6 +1,7 @@
 <template>
   <header id="homepage-header" class="center">
     <img :class="{'animStep2': animStep2}" src="@/assets/logo.webp" alt="Logo BDE Faction - IUT de Paris 2021-2022" @load="onImageLoad">
+
   </header>
 </template>
 
@@ -65,11 +66,12 @@ export default {
 /* TODO: SCSS */
 #homepage-header {
   height: 90vh;
-  background-image: url("../../assets/classroom.webp");
-  background-size: cover;
+  background-image: url("../../assets/acteurs.svg"),
+  url("../../assets/classroom.webp");
+  background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: top center;
-
+  background-position: center 80%, center;
+  background-attachment: fixed;
   position: relative;
 }
 #homepage-header>img {
@@ -77,6 +79,7 @@ export default {
   top: 20%;
   max-width: 80vw;
   max-height: 50vh;
+  z-index: 10;
   /*centre horizontal comme la position fixed est cheloue*/
     transform: translateX(-50%);
 }
