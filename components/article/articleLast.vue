@@ -1,7 +1,9 @@
 <template>
   <div>
     <p>Derniers articles</p>
-    {{lastArticles}}
+    <p v-if="lastArticles">
+      {{lastArticles}}
+    </p>
   </div>
 </template>
 
