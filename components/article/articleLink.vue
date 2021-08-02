@@ -4,15 +4,19 @@
   </NuxtLink>
 </template>
 
-<script>
-export default {
-  props: ['to'],
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  props: {
+    to: { type: String, required: true, default: '/index' }
+  },
   methods: {
     /// adds prefix and removes the suffix /index
-    correctPath (path) {
-      if (typeof (path) === 'string') { return `/articles${path}`.replace(/\/index$/g, "/"); } else { return '/articles/' }
+    correctPath (path: string) {
+      return `/articles${path}`.replace(/\/index$/g, "/");
     }
   }
-};
+});
 
 </script>

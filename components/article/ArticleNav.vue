@@ -3,7 +3,7 @@
     <h4>Articles dans la catégorie actuelle</h4>
     <!--todo : better implementation-->
     <ul class="browser-default">
-      <li v-for="post of getCategory()">
+      <li v-for="post of getCategory()" :key="post.content.path">
         <article-link :to="post.content.path">
           {{ post.content.title }}
         </article-link>
@@ -31,7 +31,10 @@ interface articleTree {
 }
 export default Vue.extend({
   name: 'ArticleNav',
-  props: ['allArticles', 'currentDir'],
+  props: {
+    allArticles: { type: Object, required: true },
+    currentDir: { type: String, required: true }
+  },
   data () {
     return {
       categoryContent: {}

@@ -51,24 +51,25 @@
   </div>
 </template>
 
-<style>
-  .i {
-    font-style: italic;
-  }
-  .collection-item {
-    font-size: 0.8em;
-  }
-</style>
-
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 
 export default Vue.extend({
+  // tba
   transition (to, from) {
     if (!from) {
-      return 'slide-left'
+      return 'slide-left';
     }
-    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left';
   }
-})
+});
 </script>
+
+<style>
+.i {
+  font-style: italic;
+}
+.collection-item {
+  font-size: 0.8em;
+}
+</style>

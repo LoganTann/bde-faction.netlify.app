@@ -15,9 +15,12 @@
   </blockquote>
 </template>
 
-<script>
-// https://content.nuxtjs.org/fr/snippets
-export default {
-  props: ['articleTOC']
-}
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  props: {
+    articleTOC: { type: Object, required: true }
+  }
+});
 </script>

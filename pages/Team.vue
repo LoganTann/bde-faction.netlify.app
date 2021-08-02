@@ -8,7 +8,7 @@
         </div>
         <div class="col s12 l8 row center">
           <div v-for="member in category.members" :key="member.picture" class="col s12" :class="get_equal_column_value(category.members.length,'m')">
-            <span class="avatar"> <img :src="pic_url(member.picture)"> </span>
+            <span class="avatar"> <img :src="pic_url(member.picture)" :alt="'photo de ' + member.firstName"> </span>
             <h5>{{ member.firstName }} <span class="surname">{{ member.surName }}</span></h5>
             <p>{{ member.caption }}</p>
           </div>
@@ -17,33 +17,6 @@
     </section>
   </div>
 </template>
-
-<style lang="css">
-#team img {
-  width: 10em;
-  height: auto;
-
-  max-width: 100%;
-  border-radius: 50%;
-  cursor: zoom-in;
-}
-#team img.active {
-  cursor: zoom-out;
-}
-.person_card {
-  margin: 0.5em;
-  text-align: center;
-}
-.surname {
-  font-variant: small-caps;
-}
-
-@media only screen and (min-width: 993px) {
-   #team.container {
-    width: 85%;
-  }
-}
-</style>
 
 <script>
 export default {
@@ -93,18 +66,18 @@ export default {
   mounted () {
     const M = this.$M;
     M.AutoInit();
-    const member_pics = document.querySelectorAll('#team .avatar img');
-    this.materialBoxInstances = M.Materialbox.init(member_pics, {});
+    const memberPics = document.querySelectorAll('#team .avatar img');
+    this.materialBoxInstances = M.Materialbox.init(memberPics, {});
   },
   destroyed () {
-    for (const picture_event of this.materialBoxInstances) {
-      picture_event.destroy();
+    for (const pictureEvent of this.materialBoxInstances) {
+      pictureEvent.destroy();
     }
     this.materialBoxInstances = null;
   },
   methods: {
-    pic_url (pic_name) {
-      return `${this.pics_path}${pic_name}`;
+    pic_url (picName) {
+      return `${this.pics_path}${picName}`;
     },
     get_equal_column_value (arrayLength, columnName) {
       let value; // TODO : rendre un poil plus stable
@@ -122,3 +95,30 @@ export default {
   }
 }
 </script>
+
+<style lang="css">
+#team img {
+  width: 10em;
+  height: auto;
+
+  max-width: 100%;
+  border-radius: 50%;
+  cursor: zoom-in;
+}
+#team img.active {
+  cursor: zoom-out;
+}
+.person_card {
+  margin: 0.5em;
+  text-align: center;
+}
+.surname {
+  font-variant: small-caps;
+}
+
+@media only screen and (min-width: 993px) {
+  #team.container {
+    width: 85%;
+  }
+}
+</style>

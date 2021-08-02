@@ -25,20 +25,6 @@
 import Vue from 'vue'
 import { IContentDocument } from '@nuxt/content/types/content'
 
-interface articleMetadata {
-  'title': string, 'description': string,
-  'slug': string, 'path': string, 'dir': string,
-  'createdAt': string, 'updatedAt': string
-}
-interface articleTree {
-  [key: string]: {
-    sortBy: 'slug' | 'updatedAt',
-    content: {
-      type: 'article' | 'category'
-      content: articleMetadata
-    }[]
-  }
-}
 export default Vue.extend({
   async asyncData ({ $content, params, error }) {
     const path = `/${params.pathMatch || ''}`

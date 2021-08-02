@@ -1,11 +1,7 @@
 <template>
   <span class="new badge blue lighten-3 dark-text">{{ isoToDate }}</span>
 </template>
-<style>
-  span.badge.new::after {
-    content: "";
-  }
-</style>
+
 <script lang="ts">
 import Vue, { PropOptions } from 'vue';
 
@@ -27,6 +23,8 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
-
+<style>
+span.badge.new::after {
+  content: "";
+}
 </style>

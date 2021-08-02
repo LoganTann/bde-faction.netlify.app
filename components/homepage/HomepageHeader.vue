@@ -39,8 +39,8 @@ export default {
     onScroll () {
       // requestAnimationFrame : __évite__ de call + de fois que les FPS actuel
       window.requestAnimationFrame(function () { // vue next tick ?
-        const container_rect = this.logo_container.getBoundingClientRect();
-        if ((container_rect.top + container_rect.height) < this.positionNextStep) {
+        const containerRect = this.logo_container.getBoundingClientRect();
+        if ((containerRect.top + containerRect.height) < this.positionNextStep) {
           this.animStep2 = true;
         } else if (this.logo_png.classList.contains("animStep2")) {
           this.animStep2 = false;
@@ -51,9 +51,9 @@ export default {
       clearTimeout(this.timer_resize);
       this.timer_resize = setTimeout(function () {
         // constantes 20% et 58% -> cf. CSS
-        const loto_flagPos = this.logo_png.getBoundingClientRect().height * 0.58;
-        const logo_top = this.logo_container.getBoundingClientRect().height * 0.2;
-        this.positionNextStep = Math.floor(logo_top + loto_flagPos);
+        const lotoFlagPos = this.logo_png.getBoundingClientRect().height * 0.58;
+        const logoTop = this.logo_container.getBoundingClientRect().height * 0.2;
+        this.positionNextStep = Math.floor(logoTop + lotoFlagPos);
         this.onScroll();
       }.bind(this), 75);
     }
