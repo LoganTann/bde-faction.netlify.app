@@ -14,7 +14,7 @@
         <hr>
         <nuxt-content :document="article" />
         <hr>
-        <h4>Navigation : </h4>
+        <h4 v-if="prev || next">Navigation : </h4>
         <article-prev-next :prev="prev" :next="next" />
       </div>
     </div>
