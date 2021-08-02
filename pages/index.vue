@@ -14,8 +14,7 @@
 
     <section class="container">
       <h2>Notre blog</h2>
-      <p><Nuxt-link to='/articles/blog'>Lien blog</Nuxt-link>
-      </p>
+      <p class="flow-text">Voici les derniers articles postés sur notre blog :</p>
       <article-last></article-last>
     </section>
 
