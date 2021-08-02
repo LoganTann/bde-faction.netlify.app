@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="correctPath(to)">
-    <slot></slot>
+    <slot />
   </NuxtLink>
 </template>
 
@@ -10,9 +10,7 @@ export default {
   methods: {
     /// adds prefix and removes the suffix /index
     correctPath (path) {
-      if (typeof (path) === 'string')
-        return `/articles${path}`.replace(/\/index$/g, "/");
-      else return '/articles/'
+      if (typeof (path) === 'string') { return `/articles${path}`.replace(/\/index$/g, "/"); } else { return '/articles/' }
     }
   }
 };

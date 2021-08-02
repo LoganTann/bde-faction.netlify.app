@@ -5,9 +5,9 @@
         <img src="@/assets/logo.webp" alt="Logo BDE FACTION">
       </Nuxt-link>
       <Nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{'b': isCurrent(link.url)}">
-        {{link.name}}
+        {{ link.name }}
       </Nuxt-link>
-      <slot></slot>
+      <slot />
     </div>
   </transition>
 </template>
@@ -15,24 +15,24 @@
 <script>
 export default {
   name: 'Navbar',
-  data() {
+  data () {
     return {
       links: [
-        {name: 'Accueil', url: '/'},
-        {name: 'La team', url: '/team'},
-        {name: 'Le blog', url: '/articles/'},
+        { name: 'Accueil', url: '/' },
+        { name: 'La team', url: '/team' },
+        { name: 'Le blog', url: '/articles/' }
       ]
+    }
+  },
+  computed: {
+    isHidden () {
+      return (this.$route.meta.layout || '') === 'hideSidebar'
     }
   },
   methods: {
     isCurrent (url) {
       // the root don't have the navbar
       return this.$route.fullPath.startsWith(url) && url !== '/';
-    }
-  },
-  computed: {
-    isHidden () {
-      return (this.$route.meta.layout || '') === 'hideSidebar'
     }
   }
 }

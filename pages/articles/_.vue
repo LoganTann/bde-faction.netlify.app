@@ -5,7 +5,7 @@
     </Navbar>
     <div class="row">
       <div class="col m3 push-m1">
-        <article-nav :all-articles="allArticles" :current-dir="article.dir"></article-nav>
+        <article-nav :all-articles="allArticles" :current-dir="article.dir" />
       </div>
 
       <div class="col m7 push-m1">

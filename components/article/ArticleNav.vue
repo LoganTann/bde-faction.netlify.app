@@ -1,14 +1,14 @@
 <template>
   <div>
-  <h4>Articles dans la catégorie actuelle</h4>
+    <h4>Articles dans la catégorie actuelle</h4>
     <!--todo : better implementation-->
-  <ul class="browser-default" >
-    <li v-for="post of getCategory()">
-      <article-link  :to="post.content.path">
-        {{post.content.title}}
-      </article-link>
-    </li>
-  </ul>
+    <ul class="browser-default">
+      <li v-for="post of getCategory()">
+        <article-link :to="post.content.path">
+          {{ post.content.title }}
+        </article-link>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -32,7 +32,7 @@ interface articleTree {
 export default Vue.extend({
   name: 'ArticleNav',
   props: ['allArticles', 'currentDir'],
-  data() {
+  data () {
     return {
       categoryContent: {}
     }
@@ -79,7 +79,7 @@ export default Vue.extend({
       }
       return result;
     },
-    getCategory() {
+    getCategory () {
       const categoryTree: articleTree = this.generateBetterStructure(this.allArticles);
       return categoryTree[this.currentDir].content;
     }

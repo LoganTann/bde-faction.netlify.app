@@ -12,6 +12,6 @@
 <script>
 // https://content.nuxtjs.org/fr/snippets
 export default {
-  props:['prev', 'next']
+  props: ['prev', 'next']
 }
 </script>

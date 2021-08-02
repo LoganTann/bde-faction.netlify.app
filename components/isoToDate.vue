@@ -1,5 +1,5 @@
 <template>
-  <span class="new badge blue">{{ isoToDate }}</span>
+  <span class="new badge blue lighten-3 dark-text">{{ isoToDate }}</span>
 </template>
 <style>
   span.badge.new::after {

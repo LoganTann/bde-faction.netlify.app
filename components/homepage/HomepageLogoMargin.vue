@@ -1,6 +1,6 @@
 <template>
-  <div class="homepage-logo-margin" >
-    <svg class="chevrons-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 15.586-4.293-4.293-1.414 1.414L12 18.414l5.707-5.707-1.414-1.414z"></path><path d="m17.707 7.707-1.414-1.414L12 10.586 7.707 6.293 6.293 7.707 12 13.414z"></path></svg>
+  <div class="homepage-logo-margin">
+    <svg class="chevrons-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 15.586-4.293-4.293-1.414 1.414L12 18.414l5.707-5.707-1.414-1.414z" /><path d="m17.707 7.707-1.414-1.414L12 10.586 7.707 6.293 6.293 7.707 12 13.414z" /></svg>
     <canvas :width="logo_rect.width" :height="logo_rect.height * flag_position">
       <!-- Canvas is even better than SVG to create a margin that follows aspect ratio -->
     </canvas>
@@ -13,9 +13,9 @@
 * @see components/homepage/homepage-header.vue, /assets/logo.png
 */
 export default {
-  name: 'homepage-logo-margin',
+  name: 'HomepageLogoMargin',
   data: () => ({
-    logo_rect: {width: 563, height: 360},
+    logo_rect: { width: 563, height: 360 },
     flag_position: 0.58
   })
 }

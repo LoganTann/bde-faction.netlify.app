@@ -1,9 +1,14 @@
 <template>
   <div class="search-wrapper">
-    <input class="autocomplete" v-model="query" type="search" autocomplete="off"
-           @focusin="focused = 'focused'"
-           @focusout="focused = ''"
-           placeholder="Rechercher des articles">
+    <input
+      v-model="query"
+      class="autocomplete"
+      type="search"
+      autocomplete="off"
+      placeholder="Rechercher des articles"
+      @focusin="focused = 'focused'"
+      @focusout="focused = ''"
+    >
 
     <ul class="dropdown-content" :class="focused">
       <li v-for="article of articles" :key="article.path">
@@ -12,8 +17,8 @@
         </article-link>
       </li>
       <li v-if="articles.length == 0">
-        <a href="#!" v-if="query == ''">Cherchez des articles</a>
-        <a href="#!" v-else>Rien trouvé :-(</a>
+        <a v-if="query == ''" href="#!">Cherchez des articles</a>
+        <a v-else href="#!">Rien trouvé :-(</a>
       </li>
     </ul>
   </div>
@@ -60,7 +65,7 @@ export default {
         return
       }
 
-      this.articles = await this.$content({deep: true})
+      this.articles = await this.$content({ deep: true })
         .only(['title', 'slug'])
         .sortBy('createdAt', 'asc')
         .limit(7)
