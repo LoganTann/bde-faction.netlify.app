@@ -1,14 +1,14 @@
 <template>
   <div>
-    <Navbar>
-      <ArticleSearchbar />
+    <Navbar> <!-- todo : menu latéral pour mobile -->
+      <ArticleSearchbar hideInMobile/>
     </Navbar>
     <div class="row">
-      <div class="col m3 push-m1">
+      <div class="col m3 l2">
         <article-nav :all-articles="allArticles" :current-dir="article.dir" />
       </div>
 
-      <div class="col m7 push-m1">
+      <div class="col push-m1 m7">
         <h1>{{ article.title }}</h1>
         <ArticleTOC :article-t-o-c="article.toc" />
         <hr>

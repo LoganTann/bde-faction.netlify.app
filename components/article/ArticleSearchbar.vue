@@ -1,5 +1,5 @@
 <template>
-  <div class="search-wrapper">
+  <div class="search-wrapper" :class="{'hide-on-small-only': hideInMobile}">
     <input
       v-model="query"
       class="autocomplete"
@@ -28,6 +28,9 @@
 // https://content.nuxtjs.org/fr/snippets
 export default {
   name: 'ArticleSearchbar',
+  props: {
+    hideInMobile: Boolean
+  },
   data () {
     return {
       query: '',

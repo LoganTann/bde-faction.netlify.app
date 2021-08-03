@@ -1,14 +1,21 @@
 <template>
   <div>
-    <h4>Articles dans la catégorie actuelle</h4>
-    <!--todo : better implementation-->
-    <ul class="browser-default">
-      <li v-for="post of getCategory()" :key="post.content.path">
-        <article-link :to="post.content.path">
-          {{ post.content.title }}
-        </article-link>
-      </li>
-    </ul>
+    <p>&nbsp;</p>
+    <div class="collection with-header">
+      <div class="collection-header">
+        Navigation
+      </div>
+      <article-link
+        v-for="post of getCategory()"
+        :key="post.content.path"
+        class="collection-item"
+        :to="post.content.path"
+        :class="'is'+post.type"
+      >
+        <i class="material-icons secondary-content">{{ post.type === 'category' ? 'folder' : 'subject' }}</i>
+        {{ post.content.title }}
+      </article-link>
+    </div>
   </div>
 </template>
 
