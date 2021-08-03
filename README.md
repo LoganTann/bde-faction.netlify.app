@@ -1,45 +1,63 @@
-# Coucou !
+# bde-faction
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/538fe26b-646b-4990-9f2e-db0882bf40f2/deploy-status)](https://app.netlify.com/sites/bde-faction/deploys)
+## Build Setup
 
-Si tu es ici, c'est que t'es bigrement curieux.
+```bash
+# install dependencies
+$ yarn install
 
-* Soit t'es un étudiant lambda qui est juste curieux et qui se dit "mais quelle structure étrange du site... Où sont les fichiers HTML ?"  
-  Dans ce cas, tu auras des détails plus bas. 😊
-* Soit t'es un membre de sinfonia et tu comprends à quel point on est pas si ouf que ça  
-  Il parait juste que c'est la tradition de faire un site web, faut pas s'attendre à un leak si ouf, à part les gros plans gênants de nos photos insta 😏
-* Soit t'es quelqu'un d'autre. Désolé pour le tutoiement. 😶
+# serve with hot reload at localhost:3000
+$ yarn dev
 
+# build for production and launch server
+$ yarn build
+$ yarn start
 
-## Comment ça fonctionne ?
-
-Le projet a été créé en VueJS. C'est un framework javascript qui permet de créer des sites web littéralement sous forme de briques indépendantes, et une [vidéo](https://vimeo.com/247494684) explique plutôt bien ce concept et les avantages.
-VueJS peut démarrer dans un simple fichier HTML ([exemple ici](https://logantann.github.io/perso/EDT_bot.html)) ou sur un serveur NodeJS.
-
-Dans notre cas, on a besoin d'installer [NodeJS](https://nodejs.org/en/).  
-Après avoir téléchargé le code source de ce repo et nodeJS, nous vous conseillons d'installer yarn qui permettra d'installer plus rapidement les dépendances. Pour cela, exécutez cette commande suivante :
-
-```sh
-npm install --global yarn # ou le diminutif "npm i -g yarn"
+# generate static project
+$ yarn generate
 ```
 
-Puis lancez la commande suivante dans le répertoire du projet afin de **télécharger les dépendances** :
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-```sh
-yarn install # ou "npm install" si vous avez pas téléchargé yarn, mais sera plus lent en moyenne
-```
+## Special Directories
 
-Il vous suffit ensuite de transformer votre ordi en serveur local de développement qui héberge notre site :
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
-```sh
-yarn serve # ou "npm run serve" si vous avez pas téléchargé yarn
-```
+### `assets`
 
-Le serveur de développement possède une fonction de hot reload, qui rechargera notre page en temps réel lorsque le code est modifié. Quelle modernité 🤩 !  
-Même si notre site est rapide, nous pouvons le rendre encore plus rapide. `yarn build` (ou `npm run build`) compilera le code en mode *production*, par contre, c'est à vous de déployer le dossier `dist` sur un véritable serveur.
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
 
-Enfin, vous pouvez exécuter une vérification syntaxique (**lint**) + correction d'erreurs en faisant `yarn lint` (ou `npm run lint`)
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
-### Open Source ?
+### `components`
 
-Comme nous sommes prétentieux mais généreux quand même, le projet est publié en sources ouvertes sous la clause [GNU GPL3, explications simples en cliquant ici](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)).
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+
+### `layouts`
+
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+
+
+### `pages`
+
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+
+### `plugins`
+
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+
+### `static`
+
+This directory contains your static files. Each file inside this directory is mapped to `/`.
+
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
