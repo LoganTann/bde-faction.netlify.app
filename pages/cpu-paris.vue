@@ -111,17 +111,25 @@
 
     <section id="join">
       <div class="container row white-text">
-        <iframe class="col s12 m6 l6 xl4" src="https://discord.com/widget?id=877136874760712192&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        <iframe
+          class="col s12 m6 l6 xl4"
+          src="https://discord.com/widget?id=877136874760712192&theme=dark"
+          width="100%"
+          height="500"
+          allowtransparency="true"
+          frameborder="0"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        />
 
-      <div class="col s12 m6 push-xl1">
-        <h2>Nous rejoindre</h2>
-        <p>Intégrer le club est totalement gratuit et accessible à tous niveaux. La plupart des ressources que nous créerons (cours...) seront également disposées en accès libre.</p>
-        <p>
-          Comme son nom l'indique, le club est ouvert aux étudiants en Informatique de l'IUT de Paris et du Campus des Grands Moulins (Tous les deux composantes de l'Université de Paris).<br>
-          Si vous ne faites pas partie de l'un des deux campus, nous pourrons tout de même vous accepter selon les effectifs actuels.
-        </p>
-        <p>Lien discord : <a href="https://discord.gg/4fcXmdbuuz">discord.gg/4fcXmdbuuz</a></p>
-      </div>
+        <div class="col s12 m6 push-xl1">
+          <h2>Nous rejoindre</h2>
+          <p>Intégrer le club est totalement gratuit et accessible à tous niveaux. La plupart des ressources que nous créerons (cours...) seront également disposées en accès libre.</p>
+          <p>
+            Comme son nom l'indique, le club est ouvert aux étudiants en Informatique de l'IUT de Paris et du Campus des Grands Moulins (Tous les deux composantes de l'Université de Paris).<br>
+            Si vous ne faites pas partie de l'un des deux campus, nous pourrons tout de même vous accepter selon les effectifs actuels.
+          </p>
+          <p>Lien discord : <a href="https://discord.gg/4fcXmdbuuz">discord.gg/4fcXmdbuuz</a></p>
+        </div>
       </div>
     </section>
   </div>
