@@ -1,29 +1,5 @@
 <template lang="html">
   <div id="cpu-paris">
-    <style>
-      header {
-      position: relative;
-      }
-      header:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: -10%;
-      left: 0;
-      width: 100%;
-      height: 120%;
-      background: #f7f3f5;
-      border-radius: 0 0 3em 3em;
-      transform: rotate(3deg);
-      }
-      #nav {
-      background-color: transparent;
-      position: relative;
-      }
-      header img {
-      width: 400px;
-      }
-    </style>
     <header class="container row">
       <Navbar class="col s12" />
       <div class="col s12" style="display: flex;justify-content: center; align-items: center;">
@@ -166,6 +142,18 @@ export default Vue.extend({
 </script>
 
 <style lang="css">
+/* positionne le :before en tant que rectangle de fond
+   todo : transformer en component
+*/
+header, #join, h2 {
+  position: relative;
+}
+header:before, #join:before, h2:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
 section {
   font-size: 1.1em;
 }
@@ -173,33 +161,42 @@ section .collection-item {
   font-size: 0.9em;
 }
 h2 {
-  position:relative;
   display:inline-block;
 }
 h2::before{
-  content: "";
   height: 20px;
   width: 90%;
-  position: absolute;
   bottom: 5px;
-  z-index: -1;
   background: #b2ebf2;
 }
-#join {
+header:before {
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: #f7f3f5;
+  border-radius: 0 0 3em 3em;
+  transform: rotate(3deg);
+}
+#nav {
+  background-color: transparent;
   position: relative;
+}
+header img {
+  width: 400px;
+}
+
+#join {
   margin: 3.5em 0;
 }
 #join h2::before {
   background: #ffa000;
 }
 #join::before {
-  content: "";
   height: calc(100% + 6em);
   width: 75%;
-  position: absolute;
   top: -3em; right: 0;
-  z-index: -1;
-  background: url(@/assets/bg-pattern.png) repeat #8a1538;
+  background:/* url(@/assets/bg-pattern.png) repeat */ #8a1538;
   border-radius: 2em 0 0 2em;
 }
 </style>
