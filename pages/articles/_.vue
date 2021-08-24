@@ -1,7 +1,8 @@
 <template>
   <div>
-    <Navbar> <!-- todo : menu latéral pour mobile -->
-      <ArticleSearchbar hideInMobile/>
+    <Navbar>
+      <!-- todo : menu latéral pour mobile -->
+      <ArticleSearchbar hide-in-mobile />
     </Navbar>
     <div class="row">
       <div class="col m3 l2">
@@ -14,7 +15,9 @@
         <hr>
         <nuxt-content :document="article" />
         <hr>
-        <h4 v-if="prev || next">Navigation : </h4>
+        <h4 v-if="prev || next">
+          Navigation :
+        </h4>
         <article-prev-next :prev="prev" :next="next" />
       </div>
     </div>

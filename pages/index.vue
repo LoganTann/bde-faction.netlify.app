@@ -11,7 +11,7 @@
         Qui ne connaît pas la signification de BDE n'a probablement pas connu une véritable vie de campus...
       </blockquote>
       <p>
-        Le Bureau des Etudiants, c'est un groupe d'élèves ambitieux ayant une volonté très simple : organiser la vie étudiante et la réussite de tous au sein de notre département.<br>
+        Le Bureau des Étudiants, c'est un groupe d'élèves ambitieux ayant une volonté très simple : organiser la vie étudiante et la réussite de tous au sein de notre département.<br>
         Cette année, nous sommes <NuxtLink to="/team">
           13 étudiants (FACTION)
         </NuxtLink> à avoir été élus pour administrer le BDE Informatique de notre campus, l'IUT de Paris - Rives de Seine.
@@ -37,13 +37,13 @@
             <h4>Notre carte de visite</h4>
           </li>
           <li class="collection-item avatar">
-            <i class="circle material-icons">favorite</i> Si vous êtes proche des jeunes, peut être qu'un petit DM sur <a href="https://www.instagram.com/listebde.faction/">notre Instagram</a> vous conviendra ?
+            <img alt="instagram logo" src="@/assets/instagram_icon.webp" class="circle" style="border-radius: 0"> Si vous êtes proche des jeunes, peut être qu'un petit DM sur <a href="https://www.instagram.com/bde.faction/">notre Instagram</a> vous conviendra ?
           </li>
           <li class="collection-item avatar">
-            <i class="circle material-icons">email</i> Pour les plus sérieux, nous avons un également un mail : &lt;liste@bde-faction.fr&gt;
+            <img alt="e-mail logo" src="@/assets/email_icon.svg" class="circle" style="transform: scale(1.15)"> Pour les plus sérieux, nous avons un également un mail : &lt;liste@bde-faction.fr&gt;
           </li>
           <li class="collection-item avatar">
-            <i class="circle material-icons">chat</i> Voisin de classe ? Réponse garantie sur notre discord !
+            <img alt="discord logo" src="@/assets/discord_icon.svg" class="circle" style="border-radius: 0"> Voisin de classe ? Réponse garantie sur notre discord !
           </li>
         </ul>
       </div>
