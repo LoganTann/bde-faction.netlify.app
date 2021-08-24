@@ -20,6 +20,7 @@ export default {
       links: [
         { name: 'Accueil', url: '/' },
         { name: 'La team', url: '/team' },
+        { name: 'Le club programmation', url: '/cpu-paris' },
         { name: 'Le blog', url: '/articles/' }
       ]
     }

@@ -27,35 +27,46 @@ export default {
       pics_path: "./assets/photos/", // TODO: webpack require pour que ce soit dans src/assets au lieu de public/assets ?
       member_list: [
         {
-          name: "Le pôle exécutif",
+          name: "Le bureau",
           members: [
-            { picture: "flo.jpg", firstName: "Florian", surName: "Le Gal", caption: "président" },
-            { picture: "ibra.jpg", firstName: "Ibrahime", surname: "Ahbib", caption: "Vice-Président" },
-            { picture: "julie.jpg", firstName: "Julie", surname: "Pessey", caption: "Secrétaire" },
-            { picture: "charles.jpg", firstName: "Charles-André", surname: "Goichot", caption: "Trésorier" }
-          ]
-        },
-        {
-          name: "Le pôle partenariat",
-          members: [
-            { picture: "logan.jpg", firstName: "Logan", surName: "Tann", caption: "" },
-            { picture: "nico.jpg", firstName: "Nicolas", surName: "Cuzon", caption: "" },
-            { picture: "youcef.jpg", firstName: "Youcef", surName: "Medileh", caption: "" }
-          ]
-        },
-        {
-          name: "Le pôle Communication",
-          members: [
-            { picture: "seb.jpg", firstName: "Sébastien", surName: "Ramirez Meija", caption: "" },
-            { picture: "marco.jpg", firstName: "Marco", surName: "Balamon", caption: "" },
-            { picture: "alexis.jpg", firstName: "Alexis", surName: "Charpentreau", caption: "" }
+            { picture: "flo.jpg", firstName: "Florian", surName: "Le Gal", caption: "Président" },
+            { picture: "logan.jpg", firstName: "Logan", surName: "Tann", caption: "Vice-Président" },
+            { picture: "julie.jpg", firstName: "Julie", surName: "Pessey", caption: "Secrétaire" },
+            { picture: "charles.jpg", firstName: "Charles-André", surName: "Goichot", caption: "Trésorier" }
           ]
         },
         {
           name: "Le pôle Evènementiel",
           members: [
-            { picture: "fabien.jpg", firstName: "Fabien", surName: "Rondan", caption: "" },
-            { picture: "guillaume.jpg", firstName: "Guillaume", surName: "Merchez", caption: "" }
+            { picture: "fabien.jpg", firstName: "Fabien", surName: "Rondan", caption: "Pôle évènementiel" },
+            { picture: "none.jpg", firstName: "Fabien", surName: "Ribeiro", caption: "Pôle évènementiel" },
+            { picture: "guillaume.jpg", firstName: "Guillaume", surName: "Merchez", caption: "Pôle évènementiel" }
+          ]
+        },
+        {
+          name: "Le pôle Communication",
+          members: [
+            { picture: "seb.jpg", firstName: "Sébastien", surName: "Ramirez Meija", caption: "Pôle communication" },
+            { picture: "marco.jpg", firstName: "Marco", surName: "Balamon", caption: "Pôle communication" },
+            { picture: "alexis.jpg", firstName: "Alexis", surName: "Charpentreau", caption: "Pôle communication" }
+          ]
+        },
+        {
+          name: "Le pôle Audiovisuel",
+          members: [
+            { picture: "none.jpg", firstName: "Meryem", surName: "Guldas", caption: "Pôle audiovisuel" },
+            { picture: "nico.jpg", firstName: "Nicolas", surName: "Cuzon", caption: "Pôle audiovisuel" }
+          ]
+        },
+        {
+          name: "Le pôle partenariat",
+          members: [
+            {
+              picture: "youcef.jpg",
+              firstName: "Youcef",
+              surName: "Medileh",
+              caption: "Pôle partenariat"
+            }
           ]
         }
       ]
@@ -80,15 +91,11 @@ export default {
       return `${this.pics_path}${picName}`;
     },
     get_equal_column_value (arrayLength, columnName) {
-      let value; // TODO : rendre un poil plus stable
-      switch (arrayLength) {
-        case 2:
-        case 4:
-        case 3:
-          value = 12 / arrayLength;
-          break;
-        default:
-          value = 12;
+      let value = 12;
+      if (arrayLength > 4) {
+        value = 3;
+      } else if (arrayLength > 1) {
+        value = 12 / arrayLength;
       }
       return `${columnName}${value}`
     }
