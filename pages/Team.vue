@@ -31,23 +31,42 @@ export default {
           members: [
             { picture: "flo.jpg", firstName: "Florian", surName: "Le Gal", caption: "Président" },
             { picture: "logan.jpg", firstName: "Logan", surName: "Tann", caption: "Vice-Président" },
-            { picture: "julie.jpg", firstName: "Julie", surname: "Pessey", caption: "Secrétaire" },
-            { picture: "charles.jpg", firstName: "Charles-André", surname: "Goichot", caption: "Trésorier" }
+            { picture: "julie.jpg", firstName: "Julie", surName: "Pessey", caption: "Secrétaire" },
+            { picture: "charles.jpg", firstName: "Charles-André", surName: "Goichot", caption: "Trésorier" }
           ]
         },
         {
-          name: "Les pôles",
+          name: "Le pôle Evènementiel",
           members: [
-            { picture: "youcef.jpg", firstName: "Youcef", surName: "Medileh", caption: "Pôle partenariat" },
-            { picture: "none.jpg", firstName: "Meryem", surName: "Guidas", caption: "Pôle audiovisuel" },
-            { picture: "nico.jpg", firstName: "Nicolas", surName: "Cuzon", caption: "Pôle audiovisuel" },
             { picture: "fabien.jpg", firstName: "Fabien", surName: "Rondan", caption: "Pôle évènementiel" },
-            { picture: "none.jpg", firstName: "Fabien", surName: "WySuko", caption: "Pôle évènementiel" },
-            { picture: "guillaume.jpg", firstName: "Guillaume", surName: "Merchez", caption: "Pôle évènementiel" },
-            { picture: "marco.jpg", firstName: "Marco", surName: "Balamon", caption: "Pôle communication" },
-            { picture: "alexis.jpg", firstName: "Alexis", surName: "Charpentreau", caption: "Pôle communication" },
+            { picture: "none.jpg", firstName: "Fabien", surName: "Ribeiro", caption: "Pôle évènementiel" },
+            { picture: "guillaume.jpg", firstName: "Guillaume", surName: "Merchez", caption: "Pôle évènementiel" }
+          ]
+        },
+        {
+          name: "Le pôle Communication",
+          members: [
             { picture: "seb.jpg", firstName: "Sébastien", surName: "Ramirez Meija", caption: "Pôle communication" },
-            { picture: "ibra.jpg", firstName: "Ibrahime", surname: "Ahbib", caption: "Ancien Vice-Président" }
+            { picture: "marco.jpg", firstName: "Marco", surName: "Balamon", caption: "Pôle communication" },
+            { picture: "alexis.jpg", firstName: "Alexis", surName: "Charpentreau", caption: "Pôle communication" }
+          ]
+        },
+        {
+          name: "Le pôle Audiovisuel",
+          members: [
+            { picture: "none.jpg", firstName: "Meryem", surName: "Guldas", caption: "Pôle audiovisuel" },
+            { picture: "nico.jpg", firstName: "Nicolas", surName: "Cuzon", caption: "Pôle audiovisuel" }
+          ]
+        },
+        {
+          name: "Le pôle partenariat",
+          members: [
+            {
+              picture: "youcef.jpg",
+              firstName: "Youcef",
+              surName: "Medileh",
+              caption: "Pôle partenariat"
+            }
           ]
         }
       ]
