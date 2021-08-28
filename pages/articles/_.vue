@@ -3,12 +3,15 @@
     <div class="row">
       <div class="col m4">
         <p>&nbsp;</p>
-        <article-searchbar />
+
+        <client-only>
+          <article-searchbar />
+        </client-only>
         <br>
-        <article-nav :all-articles="allArticles" :current-dir="article.dir" />
+        <article-nav v-if="allArticles" :all-articles="allArticles" :current-dir="article.dir" />
       </div>
 
-      <div class="col m7">
+      <div class="col m7" v-if="article">
         <h1>{{ article.title }}</h1>
         <ArticleTOC :article-t-o-c="article.toc" />
         <hr>
@@ -30,6 +33,11 @@ import Vue from 'vue'
 import { IContentDocument } from '@nuxt/content/types/content'
 
 export default Vue.extend({
+  data() {
+    return {
+      allArticles: null
+    }
+  },
   transition (to, from) {
     if (!from) {
       return 'scale'

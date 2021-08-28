@@ -17,7 +17,8 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, {PropType} from 'vue';
+import { IContentDocument } from "@nuxt/content/types/content";
 
 type entryType = 'article' | 'category' | 'home' | 'parent';
 interface articleMetadata {
@@ -37,7 +38,7 @@ interface articleTree {
 export default Vue.extend({
   name: 'ArticleNav',
   props: {
-    allArticles: { type: Object, required: true },
+    allArticles: { type: Array, required: true },
     currentDir: { type: String, required: true }
   },
   data () {
@@ -63,7 +64,7 @@ export default Vue.extend({
      * of articles, correctly sorted (by date or by slug).
      * @param allArticles
      */
-    generateBetterStructure (allArticles: articleMetadata[]) {
+    generateBetterStructure (allArticles: any) { // le type 'articleMetadata[]' est pas très cordial avec moi...
       const result: articleTree = {};
       // Will convert the path list into a tree
       for (const article of allArticles) {

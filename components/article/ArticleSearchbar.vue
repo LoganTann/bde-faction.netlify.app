@@ -9,7 +9,6 @@
       @focusin="focused = 'focused'"
       @focusout="focused = ''"
     >
-
     <ul class="dropdown-content" :class="focused">
       <li v-for="article of articles" :key="article.path">
         <article-link :to="article.path">
