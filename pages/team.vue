@@ -1,6 +1,5 @@
 <template lang="html">
   <div>
-    <Navbar />
     <section id="team" class="container">
       <div v-for="category in member_list" :key="category.name" class="row">
         <div class="col s12 m4">

@@ -1,19 +1,20 @@
 <template>
   <div>
-    <Navbar>
-      <!-- todo : menu latéral pour mobile -->
-      <ArticleSearchbar hide-in-mobile />
-    </Navbar>
     <div class="row">
-      <div class="col m3 l2">
+      <div class="col m4">
+        <p>&nbsp;</p>
+        <article-searchbar />
+        <br>
         <article-nav :all-articles="allArticles" :current-dir="article.dir" />
       </div>
 
-      <div class="col push-m1 m7">
+      <div class="col m7">
         <h1>{{ article.title }}</h1>
         <ArticleTOC :article-t-o-c="article.toc" />
         <hr>
-        <nuxt-content :document="article" />
+        <transition name="fade">
+          <nuxt-content :document="article" />
+        </transition>
         <hr>
         <h4 v-if="prev || next">
           Navigation :
@@ -29,6 +30,17 @@ import Vue from 'vue'
 import { IContentDocument } from '@nuxt/content/types/content'
 
 export default Vue.extend({
+  transition (to, from) {
+    if (!from) {
+      return 'scale'
+    }
+
+    if (from.fullPath.startsWith("/articles") && to.fullPath.startsWith("/articles")) {
+      return 'fade';
+    } else {
+      return 'scale';
+    }
+  },
   async asyncData ({ $content, params, error }) {
     const path = `/${params.pathMatch || ''}`
     const allowedPaths = { $in: [path, `${path}/index`, `${path}index`, `${path}/0`, `${path}0`] };
@@ -63,3 +75,23 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style lang="scss">
+
+.nuxt-content {
+  & h2 {
+    font-size: 2.56rem;
+  }
+  & strong {
+    font-weight: bold;
+  }
+  & ul:not(.browser-default) {
+    padding-left: revert;
+    list-style-type: initial;
+
+    & li {
+      list-style-type: initial;
+    }
+  }
+}
+</style>

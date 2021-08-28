@@ -1,5 +1,5 @@
 <template>
-  <div class="search-wrapper" :class="{'hide-on-small-only': hideInMobile}">
+  <div class="article-searchbar search-wrapper input-field" :class="{'hide-on-small-only': hideInMobile}">
     <input
       v-model="query"
       class="autocomplete"
@@ -56,12 +56,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 .search-wrapper {
   position: relative;
   width: 20em;
-  margin-left: auto;
-  margin-right: 1em;
+  max-width: 100%;
+  margin: auto;
 }
 .dropdown-content {
   transition: all 0.2s;
@@ -69,13 +69,14 @@ export default {
   top: initial;
   width: 100%;
   transform: rotateX(90deg) translateX(-1em);
-}
-.dropdown-content.focused {
-  opacity: 1;
-  transform: rotateX(0) translateX(0em);
-}
-.dropdown-content a[href="#!"] {
-  color: black;
-  cursor: default;
+
+  &.focused {
+    opacity: 1;
+    transform: rotateX(0) translateX(0em);
+  }
+  & a[href="#!"] {
+    color: black;
+    cursor: default;
+  }
 }
 </style>
