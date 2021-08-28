@@ -11,7 +11,7 @@
         <article-nav v-if="allArticles" :all-articles="allArticles" :current-dir="article.dir" />
       </div>
 
-      <div class="col m7" v-if="article">
+      <div v-if="article" class="col m7">
         <h1>{{ article.title }}</h1>
         <ArticleTOC :article-t-o-c="article.toc" />
         <hr>
@@ -33,11 +33,6 @@ import Vue from 'vue'
 import { IContentDocument } from '@nuxt/content/types/content'
 
 export default Vue.extend({
-  data() {
-    return {
-      allArticles: null
-    }
-  },
   transition (to, from) {
     if (!from) {
       return 'scale'
@@ -79,6 +74,11 @@ export default Vue.extend({
       article,
       prev,
       next
+    }
+  },
+  data () {
+    return {
+      allArticles: null
     }
   }
 });
