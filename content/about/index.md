@@ -8,14 +8,14 @@ createdAt: 2021-08-28T20:45:54+0000
 
 Une liste d'informations et de liens utiles sur l'université, le campus, les initiatives étudiantes et les associations de l'IUT
 
-cf. [la page dédiée](/content/about/ressources)
+cf. [la page dédiée](/articles/about/ressources)
 
 
 ## Code de conduite
 
 Les règles à respecter sur nos canaux de communication (ie. serveurs discord)
 
-cf. [la page dédiée](/content/about/coc)
+cf. [la page dédiée](/articles/about/coc)
 
 ## Le BDE & le site
 

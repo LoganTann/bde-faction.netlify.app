@@ -37,7 +37,7 @@ interface articleTree {
 export default Vue.extend({
   name: 'ArticleNav',
   props: {
-    allArticles: { type: Array, required: true },
+    allArticles: { type: Object, required: true },
     currentDir: { type: String, required: true }
   },
   data () {
