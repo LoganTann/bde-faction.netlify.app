@@ -5,12 +5,13 @@
         <a href="#" class="sidenavBtn" @click="toggleMobileNav()">
           <icon>menu</icon>
         </a>
-        <Nuxt-link to="/" class="logo-bde">
+        <Nuxt-link to="/" class="logo-bde" tile="Accueil du site du BDE Faction">
           <img src="@/assets/logo.webp" alt="Logo BDE FACTION">
         </Nuxt-link>
         <ul class="hide-on-med-and-down">
           <li v-for="link in links" :key="link.name">
-            <Nuxt-link :to="link.url" :class="{'active': isCurrent(link.url)}">
+            <a v-if="link.isExternal" class="isExternal" :href="link.url" :title="link.name + ' (lien externe)' ">{{ link.name }}</a>
+            <Nuxt-link v-else :to="link.url" :class="{'active': isCurrent(link.url)}" :title="link.name">
               {{ link.name }}
             </Nuxt-link>
           </li>
@@ -20,7 +21,8 @@
 
       <ul id="mobile-nav" class="sidenav">
         <li v-for="link in links" :key="link.name">
-          <Nuxt-link :to="link.url" :class="{'active': isCurrent(link.url)}">
+          <a v-if="link.isExternal" :href="link.url">{{ link.name }}</a>
+          <Nuxt-link v-else :to="link.url" :class="{'active': isCurrent(link.url)}">
             {{ link.name }}
           </Nuxt-link>
         </li>
@@ -43,6 +45,7 @@ export default {
         { name: 'Accueil', url: '/' },
         { name: 'La team', url: '/team' },
         { name: 'Le club programmation', url: '/cpu-paris' },
+        { name: 'Descalendrier', url: 'https://edt.bde-faction.fr', isExternal: true },
         { name: 'Le blog', url: '/articles/blog/' },
         { name: 'À propos', url: '/articles/about/' }
       ],
@@ -113,6 +116,27 @@ nav {
 
   & a {
     color: black;
+    &.isExternal{
+      transition: padding-left 0.5s;
+      &:hover {
+        padding-left: 1.4em;
+        &::after {
+          opacity: 1;
+        }
+      }
+      &::after {
+        transition: opacity 0.5s;
+        opacity: 0;
+        content: "launch";
+        font-family: 'Material Icons';
+        font-size: 0.7em;
+        color: grey;
+        position: relative;
+        display: inline-block;
+        transform: translateY(0.2em);
+        padding-left: 0.2em;
+      }
+    }
   }
   & .logo-bde {
     align-self: start;

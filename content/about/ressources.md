@@ -13,6 +13,8 @@ Cette page contient un certains nombres de liens qui peuvent être utile pour ac
 Les services suivants sont les plus utilisés, mais nécessitent [l'activation de votre compte universitaire](https://u-paris.fr/activation-de-votre-compte-universite-de-paris/) : 
 * [Moodle](https://moodle.u-paris.fr/), pour accéder aux documents et autres ressources déposées par vos professeurs.
 * [Outlook](outlook.com/etu.u-paris.fr), pour accéder à votre boite mail universitaire directement en ligne. Vous pouvez également ajouter votre compte sur les applications natives (Windows, Mac, Android et Iphone). 
+* [ADE](https://mescours.parisdescartes.fr/direct/myplanning.jsp), pour consulter tous les emplois du temps de l'IUT.
+* [Descalendrier](https://edt.bde-faction.fr) est une version allégée de ADE, créée par [JiveOff](https://github.com/JiveOff) pour les étudiants de notre promotion. 
   
 Sites web officiels :
 * [Bibliothèque de l'IUT](https://u-paris.fr/bibliotheques/bu-iut/)

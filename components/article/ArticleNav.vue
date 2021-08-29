@@ -17,6 +17,8 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue";
+
 type entryType = 'article' | 'category' | 'home' | 'parent';
 interface articleMetadata {
   'title': string, 'description': string,
