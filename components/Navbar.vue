@@ -44,7 +44,7 @@ export default {
       links: [
         { name: 'Accueil', url: '/' },
         { name: 'La team', url: '/team' },
-        { name: 'Le club programmation', url: '/cpu-paris' },
+        { name: 'CPU-Paris', url: '/cpu-paris' },
         { name: 'Descalendrier', url: 'https://edt.bde-faction.fr', isExternal: true },
         { name: 'Le blog', url: '/articles/blog/' },
         { name: 'À propos', url: '/articles/about/' }
@@ -117,9 +117,9 @@ nav {
   & a {
     color: black;
     &.isExternal{
-      transition: padding-left 0.5s;
+      transition: padding-right 0.5s;
       &:hover {
-        padding-left: 1.4em;
+        padding-right: 1.8em;
         &::after {
           opacity: 1;
         }
@@ -131,7 +131,7 @@ nav {
         font-family: 'Material Icons';
         font-size: 0.7em;
         color: grey;
-        position: relative;
+        position: absolute;
         display: inline-block;
         transform: translateY(0.2em);
         padding-left: 0.2em;

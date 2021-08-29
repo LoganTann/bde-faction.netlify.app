@@ -1,14 +1,13 @@
 <template>
   <header class="container row">
     <div class="col s12" style="display: flex;justify-content: center; align-items: center;">
-      <div style="width: 30%;">
+      <div class="headerTxt">
         <h1>Upgrade yourself</h1>
         <p class="flow-text">
           Que vous souhaitez apprendre ou renforcer vos compétences en informatique, nous sommes là pour vous accompagner !
         </p>
       </div>
-      <div style="width: 10%" />
-      <img src="@/assets/banner-artwork.png">
+      <img src="@/assets/banner-artwork.png" class="headerImg">
     </div>
   </header>
 </template>
@@ -20,9 +19,29 @@ export default {
 </script>
 
 <style scoped lang="scss">
-/* positionne le :before en tant que rectangle de fond
-   todo : transformer en component
-*/
+.headerTxt {
+  width: 30vw;
+}
+.headerImg {
+  height: auto;
+  max-width: 40vw;
+  margin-left: 10vw;
+}
+@media screen and (min-width: 1050px), screen and (max-width: 720px) {
+  .headerImg{ margin-left: 1em; }
+}
+@media screen and (max-width: 1550px) {
+  .headerImg{ max-width: 30vw; }
+}
+@media screen and (max-width: 720px) {
+  .headerTxt { width: 50vw; }
+  .headerImg{ max-width: 30vw; }
+}
+@media screen and (max-width: 600px) {
+  .headerImg{ display: none; }
+  .headerTxt { width: 80vw; }
+}
+/* positionne le :before en tant que rectangle de fond */
 header {
   position:relative;
 

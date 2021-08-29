@@ -168,4 +168,9 @@ h2::before{
   background:/* url(@/assets/bg-pattern.png) repeat */ #8a1538;
   border-radius: 2em 0 0 2em;
 }
+@media screen and (max-width: 600px) {
+  #join::before {
+    width: 95%;
+  }
+}
 </style>
