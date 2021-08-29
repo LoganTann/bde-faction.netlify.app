@@ -20,7 +20,7 @@ cf. [la page dédiée](/articles/about/coc)
 ## Le BDE & le site
 
 
-**Présence** : Nous sommes présents sur facebook, twitter, [Instagram](https://www.instagram.com/bde.faction/), [twitch](https://www.twitch.tv/bde_faction) et linkedin. Toutefois, seul notre compte Instagram et twitch sont réellement utilisés, le lien se trouvant sur notre page d'accueil. Nous disposons aux étudiants [un serveur discord](https://discord.gg/6XPHk23) dédié à la discussion générale et aux annonces, le rejoindre est vivement encouragé.
+**Présence** : Nous sommes présents sur Facebook, Twitter, [Instagram](https://www.instagram.com/bde.faction/), [Twitch](https://www.twitch.tv/bde_faction) et LinkedIn. Toutefois, seul notre compte Instagram et Twitch sont utilisés, le lien se trouvant sur notre page d'accueil. Nous disposons également aux étudiants un serveur discord privé dédié à la discussion générale et aux annonces, le rejoindre est vivement encouragé.
 
 **Statut légal**: Contrairement au BDE Général, nous ne sommes pas une association loi 1901, et n'avons donc pas un pouvoir d'action total sur notre département. 
 

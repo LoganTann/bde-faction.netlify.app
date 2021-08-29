@@ -1,18 +1,7 @@
 <template>
   <div class="row">
     <div v-for="article of lastArticles" :key="article.path" class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-content">
-          <iso-to-date :iso="article.createdAt" />
-          <span class="card-title">{{ article.title }}</span>
-          <p>{{ article.description }}</p>
-        </div>
-        <div class="card-action">
-          <article-link :to="article.path">
-            Lire l'article
-          </article-link>
-        </div>
-      </div>
+      <article-card :article="article" />
     </div>
   </div>
 </template>

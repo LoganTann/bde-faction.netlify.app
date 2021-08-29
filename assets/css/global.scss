@@ -1,16 +1,24 @@
 
 .fade-enter-active,
-.fade-leave-active,
-.scale-enter-active,
-.scale-leave-active {
-  transition: all 0.4s;
+.fade-leave-active {
+  transition: all 0.2s;
+  & #articleContent {
+    transition: all 0.2s;
+  }
 }
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0;
+  opacity: 0.99999;
+  & #articleContent {
+    opacity: 0;
+  }
 }
 
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.4s;
+}
 .scale-enter,
 .scale-leave-active {
   opacity: 0;
