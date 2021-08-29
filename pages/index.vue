@@ -43,8 +43,12 @@
             <img alt="e-mail logo" src="@/assets/email_icon.svg" class="circle" style="transform: scale(1.15)"> Pour les plus sérieux, nous avons un également un mail : &lt;liste@bde-faction.fr&gt;
           </li>
           <li class="collection-item avatar">
-            <img alt="discord logo" src="@/assets/discord_icon.svg" class="circle" style="border-radius: 0"> Voisin de classe ? Réponse garantie sur notre discord !
+            <img alt="discord logo" src="@/assets/discord_icon.svg" class="circle" style="border-radius: 0"> Voisin de classe ? Réponse garantie sur notre <a href="https://discord.gg/6XPHk23">discord</a> !
           </li>
+          <li class="collection-item avatar">
+            <img alt="twitch logo" src="@/assets/twitch_icon.svg" class="circle" style="border-radius: 0"> Nous effectuerons également quelques évènements <a href="https://www.twitch.tv/bde_faction">sur twitch</a>, pensez à vous abonner !
+          </li>
+          <li />
         </ul>
       </div>
     </section>
@@ -55,13 +59,6 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  // tba
-  transition (to, from) {
-    if (!from) {
-      return 'slide-left';
-    }
-    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left';
-  }
 });
 </script>
 

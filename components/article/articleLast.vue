@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div v-for="article of lastArticles" :key="article.path" class="col s12 m6">
+    <div v-for="article of lastArticles" :key="article.path" class="col s12 m6 l4">
       <div class="card">
         <div class="card-content">
           <iso-to-date :iso="article.createdAt" />
@@ -40,7 +40,7 @@ export default Vue.extend({
 });
 </script>
 
-<style>
+<style scoped>
 .card-action a {
   color: crimson;
 }

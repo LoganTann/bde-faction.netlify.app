@@ -23,7 +23,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'materialize-css/dist/css/materialize.min.css'
+    'materialize-css/dist/css/materialize.min.css',
+    '@assets/css/global.scss'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -48,5 +49,7 @@ export default {
   build: {
   },
 
-  plugins: [{ src: '~/plugins/materialize.js', mode: 'client' }]
+  plugins: [{ src: '~/plugins/materialize.js', mode: 'client' }],
+
+  pageTransition: "scale"
 }

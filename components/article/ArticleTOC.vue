@@ -20,7 +20,7 @@ import Vue from 'vue'
 
 export default Vue.extend({
   props: {
-    articleTOC: { type: Object, required: true }
+    articleTOC: { type: Array, required: true }
   }
 });
 </script>

@@ -76,9 +76,11 @@ export default {
 #homepage-header>img {
   position: fixed;
   top: 20%;
+  width: auto;
+  height: auto;
   max-width: 80vw;
   max-height: 50vh;
-  z-index: 10;
+  z-index: 5;
   /*centre horizontal comme la position fixed est cheloue*/
     transform: translateX(-50%);
 }

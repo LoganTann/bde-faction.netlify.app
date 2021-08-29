@@ -1,18 +1,6 @@
 <template lang="html">
   <div id="cpu-paris">
-    <header class="container row">
-      <Navbar class="col s12" />
-      <div class="col s12" style="display: flex;justify-content: center; align-items: center;">
-        <div style="width: 30%;">
-          <h1>Upgrade yourself</h1>
-          <p class="flow-text">
-            Que vous souhaitez apprendre ou renforcer vos compétences en informatique, nous sommes là pour vous accompagner !
-          </p>
-        </div>
-        <div style="width: 10%" />
-        <img src="@/assets/banner-artwork.png">
-      </div>
-    </header>
+    <cpu-header />
 
     <section class="row container">
       <div class="col s12">
@@ -141,14 +129,11 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="css">
-/* positionne le :before en tant que rectangle de fond
-   todo : transformer en component
-*/
-header, #join, h2 {
+<style lang="css" scoped>
+#join, h2 {
   position: relative;
 }
-header:before, #join:before, h2:before{
+#join:before, h2:before{
   content: "";
   position: absolute;
   z-index: -1;
@@ -169,22 +154,6 @@ h2::before{
   bottom: 5px;
   background: #b2ebf2;
 }
-header:before {
-  top: -10%;
-  left: 0;
-  width: 100%;
-  height: 120%;
-  background: #f7f3f5;
-  border-radius: 0 0 3em 3em;
-  transform: rotate(3deg);
-}
-#nav {
-  background-color: transparent;
-  position: relative;
-}
-header img {
-  width: 400px;
-}
 
 #join {
   margin: 3.5em 0;
@@ -198,5 +167,10 @@ header img {
   top: -3em; right: 0;
   background:/* url(@/assets/bg-pattern.png) repeat */ #8a1538;
   border-radius: 2em 0 0 2em;
+}
+@media screen and (max-width: 600px) {
+  #join::before {
+    width: 95%;
+  }
 }
 </style>
