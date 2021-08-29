@@ -4,6 +4,17 @@ description: Le code de conduite, à respecter sur nos canaux de communication (
 createdAt: 2021-08-28T18:45:54+0000
 ---
 
+> ### TLDR pour Discord
+> 1.  Harcèlement // Discrimination : Proscrit sous toutes ses formes, tout incident entrainera des sanctions sur Discord et IRL.
+> 
+> 2. Spam : En cas de signalement, ils feront l'objet d'avertissements, puis de mute en cas de récidive.
+> 
+> 3. Politique, religion : Ces discussions sont à éviter (dank memes excluded), il y a d'autres endroits pour en parler.
+> 
+> 4. Sujets particuliers, évènements : Des channels précis sont été créé en suffisance pour certains sujets spéciaux, merci de ne pas encombrer le général.
+
+
+
 ## Introduction
 
 *Notre code de conduite est une variante de [celui créé pour l'association IP7](http://ip7.informatique.univ-paris-diderot.fr:8080/coc/).*
@@ -19,6 +30,7 @@ Faction encourage tout le monde à rejoindre et à participer sur ses réseaux :
 Nous attendons des membres des réseaux BDE-Faction/IP7 le comportement suivant:
 
 * Respectez et soyez attenti·f·ves aux autres dans vos gestes, paroles, et actions ;
+* Sur nos serveurs discord, utilisez le channel adapté au sujet de discussion, pour plus d'organisation ;
 * Abstenez-vous de toutes paroles et actions pouvant être perçues comme discriminatoires ou comme du harcèlement ;
 * Les sujets de politique ou de religions sont à éviter. Le spam pourra aussi faire l'objet d'avertissements, puis de *mute* en cas de récidive.
 * Avertissez des membres du bureau de Faction si vous êtes témoins d’une situation allant à l’encontre de ces règles, même si celle-ci vous paraît anodine.

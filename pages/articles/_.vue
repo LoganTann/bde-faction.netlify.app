@@ -11,7 +11,7 @@
         <article-nav v-if="allArticles" :all-articles="allArticles" :current-dir="article.dir" />
       </div>
 
-      <div v-if="article" class="col m7">
+      <div v-if="article" id="articleContent" class="col m7">
         <h1>{{ article.title }}</h1>
         <ArticleTOC :article-t-o-c="article.toc" />
         <hr>

@@ -27,11 +27,11 @@ Les clubs sont un groupe créés par et pour les étudiants. Leur action n'est n
 Cela permet une certaine flexibilité sur les règles (tel que permettre à des étudiants extérieurs de notre département à bénéficier des initiatives proposées). 
 
 À notre connaissance, seulement deux clubs ont une action sur le département informatique, et ces deux sont dédiés à la pédagogie et l'approfondissement de la programmation :
-* **Creascio** [(discord)](https://discord.gg/TSjV4jH3Dq) / [cours](https://creascio.github.io/bibliotheque-v2/#/)
-* **CPU-Paris** [(page web)](/cpu-paris) / [(discord)](https://discord.gg/4fcXmdbuuz)
+* **Creascio** [(discord)](https://discord.gg/TSjV4jH3Dq) / [(site web des cours)](https://creascio.github.io/bibliotheque-v2/#/)
+* **CPU-Paris** [(page web introductive)](/cpu-paris) / [(discord)](https://discord.gg/4fcXmdbuuz)
 
 Discord est le moyen privilégié pour communiquer au sein du département informatique. Certains liens vous seront communiqués ultérieurement de manière privée.
-* [**Discord du BDE**](https://discord.gg/6XPHk23) (Tout le département) : Le canal de communication principal des étudiants en DUT/BUT Info. Géré par le BDE en place.
+* **Discord du BDE** (Tout le département) : Le canal de communication principal des étudiants en DUT/BUT Info. Géré par le BDE en place.
 * **Discord pour les cours** (1A ; 2A) : c'est un discord centralisé pour assurer la plupart des cours en distanciel. Il est géré par le secrétariat du département.
 * **Discord de soutien** (1A ; 2A) : Créés pour la révision des DSTs, chaque élève peut proposer son propre cours dessus. Il est souvent géré par le super-délégué.
 * **Discord de votre classe** : Selon le choix de votre groupe, un discord de classe peut également être créé. Sa durée de vie est entre 6 mois et un an, est est géré par le délégué de classe.
