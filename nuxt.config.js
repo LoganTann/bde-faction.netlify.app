@@ -11,8 +11,65 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Site web du BDE Informatique de l\'IUT de Paris ; Promo 2021 - 2022 Faction' },
+      { name: 'format-detection', content: 'telephone=no' },
+
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@Bde_Faction' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://www.bde-faction.fr'
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'BDE Informatique de l\'IUT de Paris'
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Site web du BDE Informatique de l\'IUT de Paris ; Promo 2021 - 2022 Faction'
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '/assets/factionOG.jpg'
+      },
+
+      // Open Graph
+      // Test on: https://developers.facebook.com/tools/debug/
+      { hid: 'og:site_name', property: 'og:site_name', content: 'www.bde-faction.fr' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://www.bde-faction.fr'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'BDE Informatique de l\'IUT de Paris'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Site web du BDE Informatique de l\'IUT de Paris ; Promo 2021 - 2022 Faction'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/assets/factionOG.jpg'
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'Bannière BDE Faction - IUT de Paris'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

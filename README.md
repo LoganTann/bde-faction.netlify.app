@@ -1,10 +1,17 @@
 # bde-faction
 
+Site *"statique"* du BDE Informatique de l'IUT de Paris.
+
+Celui-ci fonctionne grâce au framework Nuxt.JS, tout est expliqué en anglais ci-dessous
+
 ## Build Setup
 
 ```bash
+# Installs yarn
+npm install --global yarn
+
 # install dependencies
-$ yarn install
+$ yarn install # or just `yarn`
 
 # serve with hot reload at localhost:3000
 $ yarn dev
@@ -21,7 +28,7 @@ For detailed explanation on how things work, check out the [documentation](https
 
 ## Special Directories
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+You can create the following extra directories, some of which have special behaviors.
 
 ### `assets`
 
@@ -61,3 +68,9 @@ This directory contains your static files. Each file inside this directory is ma
 Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+
+### `content`
+
+This folder contains every markdown articles of www.bde-faction.fr/articles/*
+
+Please respect the template.

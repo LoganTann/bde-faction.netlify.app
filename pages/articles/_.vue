@@ -12,6 +12,11 @@
       </div>
 
       <div v-if="article" id="articleContent" class="col m7">
+        <social-head
+          :title="article.title"
+          :description="article.description"
+          :image="article.image"
+        />
         <h1>{{ article.title }}</h1>
         <ArticleTOC :article-t-o-c="article.toc" />
         <hr>

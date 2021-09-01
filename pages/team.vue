@@ -1,5 +1,9 @@
 <template lang="html">
   <div>
+    <SocialHead
+      title="Membre du BDE Informatique Faction"
+      description="Découvrez les 13 étudiants responsables du BDE"
+    />
     <section id="team" class="container">
       <div v-for="category in member_list" :key="category.name" class="row">
         <div class="col s12 m4">
