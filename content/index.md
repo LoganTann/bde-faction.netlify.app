@@ -13,3 +13,19 @@ Pour le moment, seulement un flux de contenu est disponible : [le blog](blog/). 
 
 On prévois aussi d'ajouter une catégorie *Cours* mais pour le moment, on priorise l'essentiel...
 
+
+### Création d'articles
+
+Cela se fait via pull request. Veuillez consulter notre [GitHub](https://github.com/LoganTann/bde-faction.fr).
+
+Voici le code javascript pour générer l'entête de chaque article de blog :
+
+```js
+console.log(
+  "---", 
+  "\ntitle:", prompt("Titre ?"),
+  "\ndescription:", prompt("Description ?"),
+  "\ncreatedAt:", new Date().toISOString(),
+  "\n---\n\n## Titre"
+);
+```
