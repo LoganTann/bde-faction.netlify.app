@@ -20,7 +20,9 @@
           <span class="avatar"> <img :src="pic_url('ibra.jpg')" alt="photo de Ibrahime"> </span>
         </div>
         <div class="col s8 l10">
-          <h3 style="margin-top: 0;">Entrées et sortie de membres</h3>
+          <h3 style="margin-top: 0;">
+            Entrées et sortie de membres
+          </h3>
           <p><b>Ibrahime Ahbib</b> (photo ci-contre) était Vice-Président de Faction et a participé à la création du groupe. Il a dû quitter ses fonctions pour des raisons personnelles.</p>
           <p><b>Fabien Ribeiro</b> était au pôle évènementiel de Sinfonia (la liste bde concurrente à faction) et a accepté de nous rejoindre pour nous assister dans la gestion des évènements.</p>
         </div>
