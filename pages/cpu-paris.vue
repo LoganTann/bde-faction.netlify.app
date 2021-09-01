@@ -1,5 +1,9 @@
 <template lang="html">
   <div id="cpu-paris">
+    <SocialHead
+      title="Club Programmation de l'Université de Paris"
+      description="Que vous souhaitez apprendre ou renforcer vos compétences en informatique, nous sommes là pour vous accompagner !"
+    />
     <cpu-header />
 
     <section class="row container">
@@ -107,9 +111,6 @@ export default Vue.extend({
     return {
       collapsibleInstance: null
     };
-  },
-  head: {
-    title: 'Club Programmation de l\'Université de Paris'
   },
   computed: {
   },

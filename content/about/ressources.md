@@ -98,11 +98,36 @@ Les postes sont d'une qualité raisonnable (contrairement à certaines salles), 
 
 **Et concernant le Wifi ?**
 
-Sauf changement, le Wifi de l'IUT n'est qu'accessible avec un compte Paris Descartes, et non U-Paris.  
-Donc ni les 1A, ni les 2A n'ont pas accès au Wifi. Dommage !
+Sauf changement, le Wifi de l'IUT n'est accessible qu'avec un compte Paris Descartes, et non U-Paris.  
+Donc ni les 1A, ni les 2A n'ont accès au Wifi. Dommage !
 
 **Autres ressources**
 
-L'IUT dispose également d'une salle audiovisuel (avec des écrans vert et des caméras) et je crois même d'une salle de Mac selon leur site... Personne n'est rentré dans ces salles (on ne sais pas où c'est) mais contactez Hassine Moungla si l'emprunter vous intéresse pour vos projets !
+L'IUT dispose également d'une salle audiovisuelle (avec des écrans vert et des caméras) et je crois même qu'il existe une salle de Mac (vérifiez cette information)... Personne n'est rentré dans ces salles (on ne sais pas où c'est) mais contactez Hassine Moungla si l'emprunter vous intéresse pour vos projets !
 
 La bibliothèque de l'IUT propose des ordinateurs portables en prêts, n'hésitez pas à solliciter l'administration en cas de besoin d'une quelconque aide matérielle.
+
+## Questions / Réponses
+
+> Des conseils pour réussir mon année ?
+
+Les conseils sont souvent subjectifs mais beaucoup vous répondront : 
+* Lire les polys ou transparentes avant de participer à un amphithéatre. Cela vous permettra de poser des questions correctes et d'assimiler plus facilement les cours.
+* Si un amphithéâtre est trop compliqué, les TDs et TPs sont là pour vous accompagner et constituent une seconde chance pour assimiler le sujet de la semaine. Votre formation est accessible même si vous n'avez aucune connaissances si vous suivez correctement durant les cours.
+* Profitez du présentiel tant qu'il est encore temps ! Si les amphis sont ennuyants, je vous laisse imaginer ce que c'est à distance...
+* Ne pas se décourager. Les fins de période (6e à 7e semaine) sont très intense et c'est une véritable épreuve psychologique. De plus, l'informatique est l'un des domaines où vous aurez les plus grands écart de note. Misez sur l'énorme esprit d'entraide de votre promotion et n'hésitez pas à solliciter vos professeurs hors-cours (présents par mail ou dans leurs bureaux)
+* Avoir un parrain ou une marraine et lui poser des questions. Il ou Elle a sûrement vécu les mêmes problèmes et est disponible pour vous aider en cas de problème
+* Rejoindre l'un des deux clubs programmations : leur objectif a avant tout un objectif pédagogique et a été créé pour vous accompagner dans votre réussite. Sinon, vos potes de classe ou sur le serveur du BDE.
+
+> Vous êtes payés pour faire ça ?
+
+Pensée à l'étudiant qui nous a posé cette question ;)  
+Nous ne sommes pas payés pour effectuer nos fonctions, bien au contraire !
+
+Tout ce qui concerne le BDE est effectué sur notre temps libre, sans rémunérations.  
+Et toutes les dépenses qui y sont liées (tel que les stickers) viennent de la poche des 13 membres de notre groupe
+
+> Comment faire une liste BDE.
+
+Si l'idée vous intéresse, contactez un membre du BDE et il pourra répondre à toutes vos questions.  
+Mais pour répondre à la question, constituez une équipe de gens biens motivés, et attendez les périodes de liste (autour de février) pour que le BDE en place vous sollicite afin de candidater.
