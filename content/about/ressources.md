@@ -98,8 +98,17 @@ Les postes sont d'une qualité raisonnable (contrairement à certaines salles), 
 
 **Et concernant le Wifi ?**
 
-Sauf changement, le Wifi de l'IUT n'est accessible qu'avec un compte Paris Descartes, et non U-Paris.  
-Donc ni les 1A, ni les 2A n'ont accès au Wifi. Dommage !
+Un wifi haut-débit est présent au sein de tous les campus de l'université. Il ne possède en théorie pas de limite.
+
+Toutefois, **il est obligatoire d'installer un driver pour s'y connecter**.
+
+La procédure complète est expliquée [ici](https://u-paris.fr/wi-fi-universite-de-paris-avec-eduroam/), mais voici un résumé : 
+
+* [Rendez-vous sur le site Eduroam](https://cat.eduroam.org/?idp=6996&profile=7802)
+* Si besoin, choisissez dans cette page l’installateur en fonction de votre système d’exploitation (Windows, Android, Apple, Linux, …) en cliquant sur le lien « *Choisissez un autre installateur à télécharger* ».   
+* Vous pourrez à présent vous connecter en wifi à l'IUT, et aussi dans n'importe quel autre campus de l'Université (ex: BU des Grands Moulins).
+
+Une fois le driver installé, choisissez le réseau Eduroam, puis entrez votre identifiant Université de Paris (utilisé sur Moodle, ADE, etc.) : `prenom.nom` puis votre mot de passe. Cela implique avoir un compte u-paris activé. Enfin, validez et vous serez normalement connecté au wifi.
 
 **Autres ressources**
 
