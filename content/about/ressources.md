@@ -110,11 +110,21 @@ La procédure complète est expliquée [ici](https://u-paris.fr/wi-fi-universite
 
 Une fois le driver installé, choisissez le réseau Eduroam, puis entrez votre identifiant Université de Paris (utilisé sur Moodle, ADE, etc.) : `prenom.nom` puis votre mot de passe. Cela implique avoir un compte u-paris activé. Enfin, validez et vous serez normalement connecté au wifi.
 
+Utilisateurs d'android : Si vous n'arrivez pas à configurer le fichier, utilisez plutôt l'appli GetEduroam disponible sur le playstore. En revanche, celle-ci n'est ni contrôllée par l'entreprise Eduroam, ni par l'Université. Elles est donc à utiliser avec précaution.
+
 **Autres ressources**
 
-L'IUT dispose également d'une salle audiovisuelle (avec des écrans vert et des caméras) et je crois même qu'il existe une salle de Mac (vérifiez cette information)... Personne n'est rentré dans ces salles (on ne sais pas où c'est) mais contactez Hassine Moungla si l'emprunter vous intéresse pour vos projets !
+L'IUT dispose également d'une salle audiovisuelle qui possède des écrans vert et des caméras (c'est la V1-3).
 
-La bibliothèque de l'IUT propose des ordinateurs portables en prêts, n'hésitez pas à solliciter l'administration en cas de besoin d'une quelconque aide matérielle.
+Pour **la salle écrans vert** : Il faut être obligatoirement accompagné par un professeur qui doit vous surveiller, pusiqu'elle doit être déclarée par le secrétariat dans l'emploi du temps de l'université. Donc ne pas miser dessus si ce n'est pas pour un devoir.
+
+Quant à la **réservation de matériel audiovisu**, il faut contacter le secrétariat et Monsieur Laurent SOULHOL (@u-paris.fr) en copie.
+
+Une **technique pour avoir des écrans vert** sans salle dédiée est plutôt de projeter un fond vert avec un vidéo projecteur. Cheap mais efficace.
+
+La bibliothèque de l'IUT propose des **ordinateurs portables en prêts**, n'hésitez pas à solliciter l'administration en cas de besoin d'une quelconque aide matérielle.
+
+**Microphones en prêt** dispo au secrétariat pour les périodes de travail à distance.
 
 ## Questions / Réponses
 
