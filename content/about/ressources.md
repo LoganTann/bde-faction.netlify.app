@@ -98,14 +98,33 @@ Les postes sont d'une qualité raisonnable (contrairement à certaines salles), 
 
 **Et concernant le Wifi ?**
 
-Sauf changement, le Wifi de l'IUT n'est accessible qu'avec un compte Paris Descartes, et non U-Paris.  
-Donc ni les 1A, ni les 2A n'ont accès au Wifi. Dommage !
+Un wifi haut-débit est présent au sein de tous les campus de l'université. Il ne possède en théorie pas de limite.
+
+Toutefois, **il est obligatoire d'installer un driver pour s'y connecter**.
+
+La procédure complète est expliquée [ici](https://u-paris.fr/wi-fi-universite-de-paris-avec-eduroam/), mais voici un résumé : 
+
+* [Rendez-vous sur le site Eduroam](https://cat.eduroam.org/?idp=6996&profile=7802)
+* Si besoin, choisissez dans cette page l’installateur en fonction de votre système d’exploitation (Windows, Android, Apple, Linux, …) en cliquant sur le lien « *Choisissez un autre installateur à télécharger* ».   
+* Vous pourrez à présent vous connecter en wifi à l'IUT, et aussi dans n'importe quel autre campus de l'Université (ex: BU des Grands Moulins).
+
+Une fois le driver installé, choisissez le réseau Eduroam, puis entrez votre identifiant Université de Paris (utilisé sur Moodle, ADE, etc.) : `prenom.nom` puis votre mot de passe. Cela implique avoir un compte u-paris activé. Enfin, validez et vous serez normalement connecté au wifi.
+
+Utilisateurs d'android : Si vous n'arrivez pas à configurer le fichier, utilisez plutôt l'appli GetEduroam disponible sur le playstore. En revanche, celle-ci n'est ni contrôllée par l'entreprise Eduroam, ni par l'Université. Elles est donc à utiliser avec précaution.
 
 **Autres ressources**
 
-L'IUT dispose également d'une salle audiovisuelle (avec des écrans vert et des caméras) et je crois même qu'il existe une salle de Mac (vérifiez cette information)... Personne n'est rentré dans ces salles (on ne sais pas où c'est) mais contactez Hassine Moungla si l'emprunter vous intéresse pour vos projets !
+L'IUT dispose également d'une salle audiovisuelle qui possède des écrans vert et des caméras (c'est la V1-3).
 
-La bibliothèque de l'IUT propose des ordinateurs portables en prêts, n'hésitez pas à solliciter l'administration en cas de besoin d'une quelconque aide matérielle.
+Pour **la salle écrans vert** : Il faut être obligatoirement accompagné par un professeur qui doit vous surveiller, pusiqu'elle doit être déclarée par le secrétariat dans l'emploi du temps de l'université. Donc ne pas miser dessus si ce n'est pas pour un devoir.
+
+Quant à la **réservation de matériel audiovisu**, il faut contacter le secrétariat et Monsieur Laurent SOULHOL (@u-paris.fr) en copie.
+
+Une **technique pour avoir des écrans vert** sans salle dédiée est plutôt de projeter un fond vert avec un vidéo projecteur. Cheap mais efficace.
+
+La bibliothèque de l'IUT propose des **ordinateurs portables en prêts**, n'hésitez pas à solliciter l'administration en cas de besoin d'une quelconque aide matérielle.
+
+**Microphones en prêt** dispo au secrétariat pour les périodes de travail à distance.
 
 ## Questions / Réponses
 
