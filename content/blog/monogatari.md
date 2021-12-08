@@ -1,4 +1,3 @@
-
 ---
 title: Créez vos visual novel en HTML avec Monogatari
 description: Découvrez Monogatari, le concurrent de Ren'Py qui veut transformer votre visual novel en site web !
@@ -6,6 +5,7 @@ createdAt: 2021-12-08T21:07:09+02:00
 ---
 
 # Créez vos visual novel en HTML avec Monogatari
+
 ## Visual Novel ? quesako
 
 Phoenix Wright : Ace Attorney, Doki Doki Litterature Club, Danganronpa ou Steins;gate... Vous connaissez sûrement un de ces jeux-ci ?
@@ -13,7 +13,7 @@ Phoenix Wright : Ace Attorney, Doki Doki Litterature Club, Danganronpa ou Steins
 Le Visual Novel, c'est un roman interactif où l'histoire est écrite sous forme de branches : le *joueur* fais des choix qui feront changer le déroulement de l'histoire, aboutissant à des passages ou fins exclusives.
 Des mini-jeux peuvent être ajoutés pour rendre l'histoire plus attractive.
 
-![.](https://upload.wikimedia.org/wikipedia/commons/3/3a/Wikipe-tan_Visual_Novel_School_French_%28Ren%27Py%29.png)
+![.](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Wikipe-tan_Visual_Novel_School_French_%28Ren%27Py%29.png/555px-Wikipe-tan_Visual_Novel_School_French_%28Ren%27Py%29.png)
 
 Pour créer un visual novel, il existe de nombreux moteurs de jeu, tel que Ren'Py, Visual Novel Maker ou NaniNovel pour Unity.
 
