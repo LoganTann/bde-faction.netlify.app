@@ -1,7 +1,7 @@
 
 ---
 title: Créez vos visual novel en HTML avec Monogatari
-description: 
+description: Découvrez Monogatari, le concurrent de Ren'Py qui veut transformer votre visual novel en site web !
 createdAt: 2021-12-08T21:07:09+02:00
 ---
 
