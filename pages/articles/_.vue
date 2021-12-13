@@ -106,5 +106,8 @@ export default Vue.extend({
       list-style-type: initial;
     }
   }
+  & img {
+    max-width: 100%;
+  }
 }
 </style>
