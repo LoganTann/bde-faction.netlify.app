@@ -92,8 +92,19 @@ export default Vue.extend({
 <style lang="scss">
 
 .nuxt-content {
+  & .toc3 {
+	margin-left: 1rem;
+  }
   & h2 {
     font-size: 2.56rem;
+  }
+  & h3 {
+	font-size: 2rem;
+  }
+  & aside {
+  	background: #f1f1ef;
+	padding: 0.1rem 1rem;
+	border-radius: 8px;
   }
   & strong {
     font-weight: bold;

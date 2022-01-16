@@ -2,6 +2,7 @@
 title: Créez vos visual novel en HTML avec Monogatari
 description: Découvrez Monogatari, le concurrent de Ren'Py qui veut transformer votre visual novel en site web !
 createdAt: 2021-12-08T21:07:09+02:00
+image: https://user-images.githubusercontent.com/28659185/145273761-f549bb86-ebca-4cad-8e36-0457785505e2.png
 ---
 
 # Créez vos visual novel en HTML avec Monogatari
@@ -26,25 +27,25 @@ Finalement, se restreindre à un moteur de jeu est souvent la meilleure option. 
 
 Monogatari est, au même titre de Ren'Py, un moteur de visual novel. Sa particularité, c'est de pouvoir créer votre visual novel et de le déployer sur navigateur.
 
-Vous allez me dire qu'il existe déjà plusieurs moteurs VN qui peuvent être jouables sur navigateur (tel que Ren'Js), et qu'il y a d'ailleurs un portage expérimental de Ren'Py en WebAssembly. Mais la particularité de Mongatari, c'est qu'**il s'agit plutôt d'un framework javascript où tout le rendu de votre jeu est en fait un site web**. 
+Vous allez me dire qu'il existe déjà plusieurs moteurs VN qui peuvent être jouables sur navigateur (tel que Ren'Js), et qu'il y a d'ailleurs un portage expérimental de Ren'Py en WebAssembly. Mais la particularité de Mongatari, c'est qu'**il s'agit plutôt d'un framework javascript où tout le rendu de votre jeu est en fait un site web**.
 
 La textbox est un *CustomElement* javascript, les images sont des balises `<img>`, et toute l'UI est finalement contenue dans de vraies balises HTML5, contrairement à Ren'Js qui est rendu sur un simple `<canvas>`.
 
 ![Retaining's Memories - Powered by Monogatari Game Engine](https://user-images.githubusercontent.com/28659185/145273761-f549bb86-ebca-4cad-8e36-0457785505e2.png)
 
-Avoir adopté ce système peut être très avantageux, car il suffit juste d'utiliser un fichier CSS pour customiser l'affichage. Et si vous voulez ajouter des mini-jeux ou choses très techniques comme une intégration serveur, vous êtes libres de manipuler le DOM à votre aise. Quant à votre script, il est écrit dans un fichier JavaScript que Monogatari va charger. Donc tout ce que vous pouvez faire dans un site web, vous pouvez le mettre dans votre jeu Monogatari. 
+Avoir adopté ce système peut être très avantageux, car il suffit juste d'utiliser un fichier CSS pour customiser l'affichage. Et si vous voulez ajouter des mini-jeux ou choses très techniques comme une intégration serveur, vous êtes libres de manipuler le DOM à votre aise. Quant à votre script, il est écrit dans un fichier JavaScript que Monogatari va charger. Donc tout ce que vous pouvez faire dans un site web, vous pouvez le mettre dans votre jeu Monogatari.
 Je pense en particulier aux graphismes vectoriels, aux vidéos, ou à des canvas WebGL externes par exemple.
 
 ![image](https://user-images.githubusercontent.com/28659185/145275617-3e110942-d969-4f54-bbe4-03f38270d488.png)
 
-L'époque où vous codiez le moteur de rendu et devez le compiler pour chaque plateforme est révolue. Le navigateur se charge de l'affichage responsive et trucs plus complexe, et il suffit juste de déposer votre site sur un serveur web (ou netlify/github pages) pour que les PC, Mac et smartphones puissent y jouer. 
+L'époque où vous codiez le moteur de rendu et devez le compiler pour chaque plateforme est révolue. Le navigateur se charge de l'affichage responsive et trucs plus complexe, et il suffit juste de déposer votre site sur un serveur web (ou netlify/github pages) pour que les PC, Mac et smartphones puissent y jouer.
 
 ## Comment faire mon jeu ?
 
 * Téléchargez le fichier zip de Monogatari sur https://github.com/Monogatari/Monogatari/releases/
 * Tout est déjà configuré. Double-cliquez sur le fichier `index.html` pour tester le jeu par défaut
 
-Il est temps d'écrire notre propre script. Ouvrez le fichier `script.js` dans le dossier `js`, et vous verrez quelque chose du genre : 
+Il est temps d'écrire notre propre script. Ouvrez le fichier `script.js` dans le dossier `js`, et vous verrez quelque chose du genre :
 
 <details>
 <summary> (Cliquez pour dévoiler le code) </summary>
@@ -103,7 +104,7 @@ monogatari.script ({
 </details>
 
 
-Le script est codé dans un objet javascript. Il existe différentes manières de créer un label, mais personnellement, je préfère profiter de ça pour tout séparer et modifier un peu : 
+Le script est codé dans un objet javascript. Il existe différentes manières de créer un label, mais personnellement, je préfère profiter de ça pour tout séparer et modifier un peu :
 
 ```js
 script = {};

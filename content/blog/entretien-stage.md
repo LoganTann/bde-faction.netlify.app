@@ -1,13 +1,11 @@
---- 
-title: Passer un entretien d'embauche 
-description: Comment vous préparer avant de passer un entretien de motivation pour son stage ? Mes conseils d'étudiant ! 
-createdAt: 2022-01-16T12:11:28.425Z 
+---
+title: Passer un entretien d'embauche
+description: Comment vous préparer avant de passer un entretien de motivation pour son stage ? Mes conseils d'étudiant !
+createdAt: 2022-01-16T12:11:28.425Z
+image: /assets/se-presenter.png
 ---
 
-
-# Passer un entretien d’embauche
-
-> Acticle écrit par Logan dans le cadre du projet DeSorientés pour le programme MA1SON Paris 14 de l’association Article1
+> Acticle écrit par Logan dans le cadre du projet DeSorientés, pour le programme MA1SON Paris 14 de l’association Article1
 
 
 Votre profil a attiré un recruteur et on vous propose de passer un entretien d’embauche ? Félicitations, c’est déjà un premier pas pour décrocher votre stage (ou tout autre type d’emploi) !
@@ -68,14 +66,14 @@ Conclusion de votre pitch, cette partie sera la plus intéressante du point de v
 Expliquez pourquoi cette entreprise et pas une autre (plutôt le cadre détendu de startup ou la popularité d’une multinationale ? Un avantage en particulier ? Un domaine d’expertise ?), et quelles compétences vous pourrez mettre à profit pour elle à partir de votre parcours.
 
 </details>
-  
+
 ## Acte 2 : Les questions du recruteur
 
 ### A propos de l’entreprise
 
 Après avoir bien vendu votre profil, le recruteur cherchera à savoir si vous connaissez bien l’entreprise. Si vous avez vendu l’entreprise comme étant la meilleure, mais ne savez pas quelle est son envergure, avouez que ça fais tâche.
 
-On ne vous le répètera jamais assez, établissez une recherche approfondie sur l’entreprise. Voici quelques questions à préparer : 
+On ne vous le répètera jamais assez, établissez une recherche approfondie sur l’entreprise. Voici quelques questions à préparer :
 
 - Qui dirige l’entreprise ? Renseignez-vous également sur le recruteur qui passera votre entretien et votre référent de stage si on vous le communique.
 - La dimension : multinationale, entreprise de taille intermédiaire, TPE ?
@@ -115,7 +113,7 @@ Adaptez-vous le plus possible en fonction de l’industrie et du poste, et dans 
 
 ### Soyez à l’heure
 
-30 minutes en avance. Il faut en effet prévoir les problèmes de transports, et dans les grands groupes, passer par l’accueil et présenter patte blanche. Même en visio, on n'est pas à l’abri des imprévus techniques. 
+30 minutes en avance. Il faut en effet prévoir les problèmes de transports, et dans les grands groupes, passer par l’accueil et présenter patte blanche. Même en visio, on n'est pas à l’abri des imprévus techniques.
 
 Et si vous êtes en retard, passez un appel plutôt que de venir à l’improviste. Les retards sont souvent éliminatoires.
 
