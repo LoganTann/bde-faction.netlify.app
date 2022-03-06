@@ -6,6 +6,8 @@ createdAt: 2022-03-06T16:36:59.517Z
 
 Nous avons été sollicités pour vous parler de Preply, une plateforme d'apprentissage en ligne spécialisée en apprentissage de langue étrangère.
 
+![Preply - Global marketplace for tutoring](https://static.preply.com/images/recycled/fb_preply-snippet.6dc833145424.png)
+
 Vous pouvez :
 * Apprendre de l'anglais, de l'espagnol, du japonais et bien plus
 * Bénéficier de ressources pédagogiques gratuites
