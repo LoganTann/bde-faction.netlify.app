@@ -2,6 +2,7 @@
 title: Apprenez une langue avec Preply 
 description: Nous avons été sollicités pour vous partager une réduction étudiante avec Preply, une plateforme d'apprentissage de langues à distance 
 createdAt: 2022-03-06T16:36:59.517Z 
+image: https://static.preply.com/images/recycled/fb_preply-snippet.6dc833145424.png
 ---
 
 Nous avons été sollicités pour vous parler de Preply, une plateforme d'apprentissage en ligne spécialisée en apprentissage de langue étrangère.
