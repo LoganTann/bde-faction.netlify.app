@@ -18,5 +18,5 @@ Vous pouvez :
 
 À l'issue de ce partenariat, Preply propose une réduction de 15% en validant votre adresse académique.
 
-Pour y bénéficier, c'est par ici : https://preply.com/fr/reduction-etudiants !
+Pour y bénéficier, c'est par ici : http://tracking.preply.com/aff_c?offer_id=14&aff_id=3583&url_id=480 !
 
