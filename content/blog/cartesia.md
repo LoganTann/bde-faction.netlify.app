@@ -1,8 +1,8 @@
 ---
 title: L'association Cartésia Junior risque de disparaitre
-description: Depuis ses 4 ans d'existence, l'association étudiante Cartésia Junior n'a toujours pas les status pour exercer ses actions. Je vous explique comment vous pourriez avoir un rôle à jouer pour éviter sa disparition
+description: Depuis ses 4 ans d'existence, l'association étudiante Cartésia Junior est toujours au stade embryonnaire. Notre Junior Entreprise frôlant la dispartion, je vous explique le contexte et comment vous pourriez avoir un rôle à jouer.
 createdAt: 2022-07-06T07:19:45.165Z
-image: https://media.discordapp.net/attachments/888756304775094272/940963353109606490/cartesiaV4.png?width=400&height=400
+image: https://media.discordapp.net/attachments/888756304775094272/940963353109606490/cartesiaV4.png?width=100&height=100
 ---
 
 ## Junior Entreprise ? Jamais entendu parler...
@@ -11,17 +11,17 @@ Cartésia est un projet de Junior Entreprise créée il y a 4 ans par deux étud
 
 Si le concept de Junior Entreprise (JE) vous parait inconnu, c'est normal : il n'existe à ce jour aucun IUT possédant une junior entreprise, car ce genre d'association existe plutôt au sein d'écoles d'ingénieurs.
 
-En de simples termes, c'est une association étudiante qui réalise de prestations pour des clients, en mettant en œuvre les compétences et les connaissances acquises au cours de leurs études. Et ça tombe bien, le BUT est une formation professionnalisante.
+En de simples termes, **c'est une association étudiante qui réalise de prestations pour des clients, en mettant en œuvre les compétences et les connaissances acquises au cours de leurs études**. Et ça tombe bien, le BUT est une formation professionnalisante : nous avons tout à fait le niveau.
 
-**Il y a plein d'avantages à rejoindre une JE** :
+## Il y a plein d'avantages à rejoindre une JE
 
-- Expérience tirée : En plus de parfaire et de mettre réellement en pratique ce que vous avez vu en cours, vous êtes accompagnés par les professionnels du starter de l'IUT.
-- Valorisation sur le CV : Les recruteurs voient d'un très bon œil. C'est définitivement une compétence à mettre en avant si votre section _expérience professionnelle_ est vide.
-- Satisfaction personnelle, faire partie d'une équipe soudée, développer son réseau pro...
+Tout d'abord d'un point de vue pro, les recruteurs voient d'un très bon œil un engagement en junior entreprise. C'est définitivement une compétence à mettre en avant si votre section _expérience professionnelle_ est vide. Vous pourriez aussi parfaire et mettre réellement en pratique ce que vous avez vu en cours.
 
-> _Attendez une minute... vous avez fait aucune prestation cette année ? Ni même l'année dernière..._
+Sans oublier la satisfaction personnelle et développer un esprit de groupe avec une équipe soudée !
 
-Les plus aguerris l'auront remarqué. Parmi les 2A, vous remarquerez également que par rapport à l'année dernière, nous n'avons fait que très peu de communication autour de ces avantages.
+> _Attendez une minute... vous n'avez réalisé aucune prestation cette année ? Ni même l'année dernière..._
+
+Pour les 2A, vous remarquerez aussi que par rapport à l'année dernière, nous n'avons fait que très peu de communication autour de ces avantages.
 
 Pourquoi-donc, me diriez-vous ?
 
@@ -29,7 +29,7 @@ Pourquoi-donc, me diriez-vous ?
 
 Vu que de l'argent et du travail est en jeu, vous vous doutez que le travail fourni par une Junior Entreprise est très réglementé. Pour être une JE, l'association étudiante doit être validée et rattachée à la [CNJE](https://junior-entreprises.com/), sinon interdiction de faire quoi que ce soit.
 
-Et vous pouvez vous en douter, nous n'avons pas ce statut. En fait, nous sommes encore à l'étape de démarches administratives depuis les 4 ans d'existence de ce projet.
+En fait, nous sommes encore à l'étape de démarches administratives depuis les 4 ans d'existence de ce projet.
 
 Au début, on était très motivés à terminer une bonne fois pour toutes ces démarches administratives. Mais le plus gros problème, ce sont **les procédures en cascade** :
 
@@ -41,27 +41,20 @@ Au début, on était très motivés à terminer une bonne fois pour toutes ces d
 
 Il y a aussi d'autres procédures que je n'ai pas détaillées, mais durant toute l'année, ironiquement, nous avons été bloqués à l'étape qu'on pensait la plus simple (avis favorable du directeur).
 
-Note : le statut d'association a été fait l'année dernière sans adresse de domiciliation propre, et nous trouvions inutile de renouveler sans cette première étape. CF. [Histoire de cartésia](https://cartesia-junior.netlify.app/history)
+Vous pouvez en savoir plus sur l'[Histoire de cartésia](https://cartesia-junior.netlify.app/history)
 
 ## Quel rôle pourrais-je jouer ?
 
 Comme chaque année, un nouveau groupe succède l'ancien, un peu comme les BDE. Malheureusement, nous aurions bien voulu que la future promotion ait tous les bagages en main pour faire des prestations plutôt que la paperasse administrative.
 
-Nous recherchons des personnes motivées pouvant s'engager durant leurs deux années de BUT pour les postes suivants :
+Pour voir les postes que vous pourriez occuper et éventuellement soumettre votre candidature, je vous propose de jeter un oeil sur notre google forms !
 
-- Président, Vice-Président : Rôles indispensables pour la gestion de l'équipe et de l'association
-- Secrétaire, Secrétaire adjoint : Rôles indispensables pour la rédaction de comptes rendus et assistance aux démarches administratives
-- Trésorier : Au stade administratif, son rôle est déterminant pour l'obtention du compte bancaire de l'association
+Sans volontaires pour assurer la continuité de l'association, il est fort probable que celle-ci disparaisse et que les efforts des générations précédentes aient été vaines.
 
-Mais aussi :
+Evidemment, L'équipe actuelle de cartésia restera à disposition pour accompagner la future génération.
 
-- Responsable des Systèmes Informatiques : Pour assurer la maintenance du site actuel de la JE et conseiller l'équipe sur tout l'aspect informatique et infrastructure
-- Responsable des Communications : Pour assurer la communication de la JE au travers de nos réseaux sociaux
-- Responsable Audiovisuel : Pour assurer la création d'infographies au sein de nos communications
-- Responsable de qualité commerciale : Au stade administratif, promouvoir les plans de l'entreprise et conseille l'équipe sur tout l'aspect qualité commerciale.
+## Lien vers le google forms :
 
-Sans volontaires pour assurer la continuité de l'association, il est fort probable que celle-ci disparaisse et que les efforts des générations précédentes ont été vaines.
+https://forms.gle/8uWDx8W6kJzLnHBG9
 
-Pour ma part, je compte rester à disposition de l'équipe qui nous succèdera en cas de conseils ou besoin d'aide.
-
-Si vous êtes volontaires, n'hésitez pas à contacter les membres actuels sur discord (tel que @ShinProg#2885) ou par mail (logane.tann A etu.u-paris.fr)
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTE7Amq2QGaWq1Sn2wOv-SHfxjY4TAHiEDeb3gbGTJ995VVg/viewform?embedded=true" width="640" height="1463" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
