@@ -2,7 +2,7 @@
 title: L'association Cartésia Junior risque de disparaitre
 description: Depuis ses 4 ans d'existence, l'association étudiante Cartésia Junior n'a toujours pas les status pour exercer ses actions. Je vous explique comment vous pourriez avoir un rôle à jouer pour éviter sa disparition
 createdAt: 2022-07-06T07:19:45.165Z
-image: https://iutparis-seine.u-paris.fr/wp-content/uploads/sites/3/2021/08/COUV-scaled.jpg
+image: https://media.discordapp.net/attachments/888756304775094272/940963353109606490/cartesiaV4.png?width=400&height=400
 ---
 
 ## Junior Entreprise ? Jamais entendu parler...
@@ -39,7 +39,9 @@ Au début, on était très motivés à terminer une bonne fois pour toutes ces d
   1. Plein de documents à fournir concernant l'association étudiante
   2. Un avis favorable écrit du directeur de l'IUT
 
-Il y a aussi d'autres procédures que je n'ai pas détaillées, mais durant toute l'année, ironiquement, nous avons été bloqués à l'étape qu'on pensait la plus simple (avis favorable du directeur). Note : le statut d'association a été fait l'année dernière sans adresse de domiciliation propre, et nous trouvions inutile de renouveler sans cette première étape.
+Il y a aussi d'autres procédures que je n'ai pas détaillées, mais durant toute l'année, ironiquement, nous avons été bloqués à l'étape qu'on pensait la plus simple (avis favorable du directeur).
+
+Note : le statut d'association a été fait l'année dernière sans adresse de domiciliation propre, et nous trouvions inutile de renouveler sans cette première étape. CF. [Histoire de cartésia](https://cartesia-junior.netlify.app/history)
 
 ## Quel rôle pourrais-je jouer ?
 
