@@ -21,7 +21,7 @@
 
       <div class="row valign-wrapper">
         <div class="col s4 l2">
-          <span class="avatar"> <img :src="pic_url('ibra.jpg')" alt="photo de Ibrahime"> </span>
+          <span class="avatar"> <img :src="pic_url('none.jpg')" alt="photo de Ibrahime"> </span>
         </div>
         <div class="col s8 l10">
           <h3 style="margin-top: 0;">
@@ -47,17 +47,17 @@ export default {
           name: "Le bureau",
           desc: "Le président représente le groupe tandis que le vice-président manage l'équipe. Quant aux autres rôles, ceux-ci sont assez explicites.",
           members: [
-            { picture: "flo.jpg", firstName: "Florian", surName: "Le Gal", caption: "Président" },
-            { picture: "logan.jpg", firstName: "Logan", surName: "Tann", caption: "Vice-Président" },
-            { picture: "julie.jpg", firstName: "Julie", surName: "Pessey", caption: "Secrétaire" },
-            { picture: "charles.jpg", firstName: "Charles-André", surName: "Goichot", caption: "Trésorier" }
+            { picture: "none.jpg", firstName: "Florian", surName: "Le Gal", caption: "Président" },
+            { picture: "none.jpg", firstName: "Logan", surName: "Tann", caption: "Vice-Président" },
+            { picture: "none.jpg", firstName: "Julie", surName: "Pessey", caption: "Secrétaire" },
+            { picture: "none.jpg", firstName: "Charles-André", surName: "Goichot", caption: "Trésorier" }
           ]
         },
         {
           name: "Le pôle Evènementiel",
           desc: "Le pôle évènementiel se charge d'inventer et d'organiser les soirées ou sorties.",
           members: [
-            { picture: "fabien.jpg", firstName: "Fabien", surName: "Rondan", caption: "Pôle évènementiel" },
+            { picture: "none.jpg", firstName: "Fabien", surName: "Rondan", caption: "Pôle évènementiel" },
             { picture: "none.jpg", firstName: "Fabien", surName: "Ribeiro", caption: "Pôle évènementiel" },
             { picture: "none.jpg", firstName: "Guillaume", surName: "Merchez", caption: "Pôle évènementiel" }
           ]
@@ -66,9 +66,9 @@ export default {
           name: "Le pôle Communication",
           desc: "Manage notre superbe compte Insta, et poste aussi certaines annonces sur Discord.",
           members: [
-            { picture: "seb.jpg", firstName: "Sébastien", surName: "Ramirez Meija", caption: "Pôle communication" },
-            { picture: "marco.jpg", firstName: "Marco", surName: "Balamon", caption: "Pôle communication" },
-            { picture: "alexis.jpg", firstName: "Alexis", surName: "Charpentreau", caption: "Pôle communication" }
+            { picture: "none.jpg", firstName: "Sébastien", surName: "Ramirez Meija", caption: "Pôle communication" },
+            { picture: "none.jpg", firstName: "Marco", surName: "Balamon", caption: "Pôle communication" },
+            { picture: "none.jpg", firstName: "Alexis", surName: "Charpentreau", caption: "Pôle communication" }
           ]
         },
         {
@@ -76,7 +76,7 @@ export default {
           desc: "Crée les superbes infographies pour nos réseaux sociaux.",
           members: [
             { picture: "none.jpg", firstName: "Meryem", surName: "Guldas", caption: "Pôle audiovisuel" },
-            { picture: "nico.jpg", firstName: "Nicolas", surName: "Cuzon", caption: "Pôle audiovisuel" }
+            { picture: "none.jpg", firstName: "Nicolas", surName: "Cuzon", caption: "Pôle audiovisuel" }
           ]
         },
         {
@@ -84,7 +84,7 @@ export default {
           desc: "Démarche les entreprises et organisations locales pour trouver des offres exclusives à notre département",
           members: [
             {
-              picture: "youcef.jpg",
+              picture: "none.jpg",
               firstName: "Youcef",
               surName: "Medileh",
               caption: "Pôle partenariat"
