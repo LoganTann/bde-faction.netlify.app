@@ -59,7 +59,7 @@ export default {
           members: [
             { picture: "fabien.jpg", firstName: "Fabien", surName: "Rondan", caption: "Pôle évènementiel" },
             { picture: "none.jpg", firstName: "Fabien", surName: "Ribeiro", caption: "Pôle évènementiel" },
-            { picture: "guillaume.jpg", firstName: "Guillaume", surName: "Merchez", caption: "Pôle évènementiel" }
+            { picture: "none.jpg", firstName: "Guillaume", surName: "Merchez", caption: "Pôle évènementiel" }
           ]
         },
         {
